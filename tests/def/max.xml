@@ -1,0 +1,71 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 0
+  label_count 0
+  insn_vector
+    load_const c0
+    store_global c1
+    load_const c2
+    store_global c3
+    load_const c4
+    load_const c5
+    load_global c1
+    call 2
+    print
+    load_const c4
+    load_const c5
+    load_global c3
+    call 2
+    print
+    load_const c6
+    return
+  const_vector
+    lambda
+      name max
+      param_count 2
+      local_count 0
+      label_count 2
+      insn_vector
+        load_local 1
+        load_local 0
+        jle L1
+        load_local 0
+        return
+        jmp L0
+        label L1
+        load_local 1
+        return
+        label L0
+        load_const c0
+        return
+      const_vector
+        None
+      guard_vector
+      line_number_map 2 2 2 3 3 2 2 5 5 2 1 1
+    max
+    lambda
+      name min
+      param_count 2
+      local_count 0
+      label_count 2
+      insn_vector
+        load_local 1
+        load_local 0
+        jge L1
+        load_local 0
+        return
+        jmp L0
+        label L1
+        label L0
+        load_local 1
+        return
+      const_vector
+      guard_vector
+      line_number_map 8 8 8 9 9 8 8 8 10 10
+    min
+    2.000000
+    1.000000
+    None
+  guard_vector
+  line_number_map 1 1 7 7 12 12 12 12 12 13 13 13 13 13 1 1

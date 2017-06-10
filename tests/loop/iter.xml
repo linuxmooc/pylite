@@ -1,0 +1,125 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 1
+  label_count 3
+  insn_vector
+    new_class c0
+    store_global c0
+    load_const c1
+    load_global c0
+    store_field c2
+    load_const c3
+    load_global c0
+    store_field c4
+    load_const c5
+    load_global c0
+    store_field c6
+    load_const c7
+    load_const c8
+    load_global c0
+    call 2
+    store_global c9
+    load_global c9
+    iterator
+    store_local -1
+    jmp L1
+    label L0
+    store_global c10
+    load_global c10
+    print
+    label L1
+    load_local -1
+    next L0
+    pop
+    label L2
+    load_const c11
+    return
+  const_vector
+    EvenGenerator
+    lambda
+      name __init__
+      param_count 3
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 1
+        load_local 0
+        store_field c0
+        load_local 2
+        load_local 0
+        store_field c1
+        load_local 1
+        load_local 0
+        store_field c2
+        load_const c3
+        return
+      const_vector
+        start
+        end
+        current
+        None
+      guard_vector
+      line_number_map 3 3 3 4 4 4 5 5 5 2 2
+    __init__
+    lambda
+      name __iter__
+      param_count 1
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 0
+        return
+        load_const c0
+        return
+      const_vector
+        None
+      guard_vector
+      line_number_map 8 8 7 7
+    __iter__
+    lambda
+      name __next__
+      param_count 1
+      local_count 1
+      label_count 2
+      insn_vector
+        load_local 0
+        load_field c0
+        load_local 0
+        load_field c1
+        jle L1
+        load_global c2
+        call 0
+        raise
+        jmp L0
+        label L1
+        label L0
+        load_local 0
+        load_field c1
+        store_local -1
+        load_const c3
+        load_local 0
+        load_field c1
+        add
+        load_local 0
+        store_field c1
+        load_local -1
+        return
+        load_const c4
+        return
+      const_vector
+        end
+        current
+        StopIteration
+        2.000000
+        None
+      guard_vector
+      line_number_map 11 11 11 11 11 12 12 12 11 11 11 13 13 13 14 14 14 14 14 14 15 15 10 10
+    __next__
+    10.000000
+    0.000000
+    g
+    i
+    None
+  guard_vector
+  line_number_map 1 1 2 2 2 7 7 7 10 10 10 17 17 17 17 17 18 18 18 18 18 18 19 19 18 18 18 18 18 1 1

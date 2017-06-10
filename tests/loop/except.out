@@ -1,0 +1,8 @@
+0
+1
+2
+3
+4
+ZeroDivisionError:
+  At except.py, line 12, in __next__()
+  At except.py, line 18, in __init__()

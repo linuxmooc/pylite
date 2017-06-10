@@ -1,0 +1,166 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 0
+  label_count 0
+  insn_vector
+    load_module 0
+    load_field 1
+    load_this_module
+    store_field 1
+    load_const 2
+    store_global 3
+    new_class
+    store_global 4
+    load_global 1
+    load_global 4
+    inherit
+    load_const 5
+    load_global 4
+    store_field 6
+    load_const 7
+    load_global 4
+    store_field 8
+    load_const 9
+    store_global 10
+    load_const 11
+    load_global 10
+    div
+    load_const 12
+    load_global 4
+    call 2
+    store_global 13
+    load_global 10
+    load_const 11
+    load_global 10
+    div
+    load_global 4
+    call 2
+    store_global 14
+    load_global 13
+    load_field 15
+    call 0
+    pop
+    load_global 14
+    load_field 15
+    call 0
+    pop
+    load_global 13
+    load_field 16
+    call 0
+    pop
+    load_global 14
+    load_field 16
+    call 0
+    pop
+    load_global 14
+    load_field 17
+    load_global 13
+    load_field 17
+    add
+    print
+    load_const 18
+    return
+  const_vector
+    threading
+    Thread
+    lambda
+      name add
+      param_count 2
+      local_count 2
+      label_count 3
+      insn_vector
+        load_const 0
+        store_local -1
+        load_local 0
+        store_local -2
+        jmp 1
+        label 0
+        load_const 1
+        load_local -1
+        add
+        store_local -1
+        load_const 1
+        load_local -2
+        add
+        store_local -2
+        label 1
+        load_local 1
+        load_local -2
+        jlt 0
+        label 2
+        load_local -1
+        return
+      const_vector
+        0.000000
+        1.000000
+      guard_vector
+    add
+    Computer
+    lambda
+      name __init__
+      param_count 3
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 0
+        load_global 0
+        load_field 1
+        call 1
+        pop
+        load_local 1
+        load_local 0
+        store_field 2
+        load_local 2
+        load_local 0
+        store_field 3
+        load_const 4
+        load_local 0
+        store_field 5
+        load_const 6
+        return
+      const_vector
+        Thread
+        __init__
+        low
+        high
+        0.000000
+        result
+        None
+      guard_vector
+    __init__
+    lambda
+      name run
+      param_count 1
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 0
+        load_field 0
+        load_local 0
+        load_field 1
+        load_global 2
+        call 2
+        load_local 0
+        store_field 3
+        load_const 4
+        return
+      const_vector
+        high
+        low
+        add
+        result
+        None
+      guard_vector
+    run
+    320000.000000
+    n
+    2.000000
+    0.000000
+    computer0
+    computer1
+    start
+    join
+    result
+    None
+  guard_vector

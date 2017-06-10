@@ -1,0 +1,6 @@
+global start
+try
+finally
+ZeroDivisionError:
+  At insane0.py, line 4, in main()
+  At insane0.py, line 9, in __init__()

@@ -1,0 +1,7 @@
+global start
+main start
+except start
+finally
+IOError:
+  At complex2.py, line 8, in main()
+  At complex2.py, line 14, in __init__()

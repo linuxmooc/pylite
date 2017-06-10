@@ -1,0 +1,2 @@
+ZeroDivisionError:
+  At catch0.py, line 2, in __init__()

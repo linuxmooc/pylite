@@ -1,0 +1,59 @@
+nop              1
+print            1
+halt             1
+label            0
+
+not              1
+neg              1
+com              1
+
+and              1
+or               1
+xor              1
+lsh              1
+rsh              1
+add              1
+sub              1
+mul              1
+div              1
+mod              1
+
+jmp              3
+jtrue            3
+jfalse           3
+jlt              3
+jle              3
+jeq              3
+jne              3
+jge              3
+jgt              3
+iterator         1 
+next             3
+
+call             3
+return           1
+dup_top          3
+pop              1
+
+load_const       3
+load_global      3
+store_global     3
+load_local       3
+store_local      3
+load_item        1
+store_item       1
+load_field       3
+store_field      3
+new_class        3
+new_list         3
+new_dict         1
+new_tuple        3
+new_slice        1
+load_module      3
+load_this_module 1
+
+inherit          1
+raise            1
+catch            1
+finally_call     3
+finally_exit     3

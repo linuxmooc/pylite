@@ -1,0 +1,31 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 0
+  label_count 0
+  insn_vector
+    load_module c0
+    load_field c1
+    load_this_module
+    store_field c1
+    load_const c2
+    load_global c1
+    load_field c3
+    call 1
+    pop
+    load_const c4
+    load_global c1
+    load_field c3
+    call 1
+    pop
+    load_const c5
+    return
+  const_vector
+    sys
+    stdout
+    "HELLO\n"
+    write
+    "WORLD\n"
+    None
+  guard_vector
+  line_number_map 1 1 1 1 2 2 2 2 2 3 3 3 3 3 1 1

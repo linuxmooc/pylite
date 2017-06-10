@@ -1,0 +1,56 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 0
+  label_count 0
+  insn_vector
+    load_module c0
+    load_this_module
+    store_field c0
+    load_global c0
+    load_field c1
+    print
+    load_global c0
+    load_field c1
+    store_global c1
+    load_const c2
+    load_global c0
+    load_field c3
+    call 1
+    print
+    load_global c1
+    load_global c0
+    load_field c4
+    call 1
+    print
+    load_module c5
+    load_this_module
+    store_field c5
+    load_const c6
+    load_const c7
+    load_global c5
+    load_field c8
+    call 2
+    print
+    load_const c6
+    load_const c7
+    load_global c5
+    load_field c9
+    call 2
+    print
+    load_const c10
+    return
+  const_vector
+    math
+    pi
+    0.000000
+    sin
+    cos
+    util
+    22.000000
+    11.000000
+    max
+    min
+    None
+  guard_vector
+  line_number_map 1 1 1 3 3 3 4 4 4 5 5 5 5 5 6 6 6 6 6 8 8 8 9 9 9 9 9 9 10 10 10 10 10 10 1 1

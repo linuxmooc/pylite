@@ -1,0 +1,60 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 0
+  label_count 0
+  insn_vector
+    load_const c0
+    store_global c1
+    load_const c2
+    store_global c3
+    load_global c3
+    load_global c1
+    add
+    print
+    load_global c3
+    load_global c1
+    sub
+    print
+    load_global c3
+    load_global c1
+    mul
+    print
+    load_global c3
+    load_global c1
+    div
+    print
+    load_global c3
+    load_global c1
+    mod
+    print
+    load_global c3
+    load_global c1
+    xor
+    print
+    load_global c3
+    load_global c1
+    and
+    print
+    load_global c3
+    load_global c1
+    or
+    print
+    load_global c3
+    load_global c1
+    lsh
+    print
+    load_global c3
+    load_global c1
+    rsh
+    print
+    load_const c4
+    return
+  const_vector
+    2.000000
+    a
+    3.000000
+    b
+    None
+  guard_vector
+  line_number_map 1 1 2 2 3 3 3 3 4 4 4 4 5 5 5 5 6 6 6 6 7 7 7 7 9 9 9 9 10 10 10 10 11 11 11 11 12 12 12 12 13 13 13 13 1 1

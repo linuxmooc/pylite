@@ -1,0 +1,133 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 0
+  label_count 4
+  insn_vector
+    new_class c0
+    store_global c0
+    load_const c1
+    load_global c0
+    store_field c2
+    load_const c3
+    load_global c0
+    store_field c4
+    load_const c5
+    load_global c0
+    store_field c6
+    load_const c7
+    load_const c8
+    load_global c0
+    call 2
+    store_global c9
+    load_const c10
+    load_const c11
+    load_global c0
+    call 2
+    store_global c12
+    load_global c12
+    load_global c9
+    jge L1
+    load_const c13
+    print
+    jmp L0
+    label L1
+    load_const c14
+    print
+    label L0
+    load_global c12
+    load_global c9
+    jle L3
+    load_const c15
+    print
+    jmp L2
+    label L3
+    load_const c16
+    print
+    label L2
+    load_const c17
+    return
+  const_vector
+    Person
+    lambda
+      name __init__
+      param_count 3
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 1
+        load_local 0
+        store_field c0
+        load_local 2
+        load_local 0
+        store_field c1
+        load_const c2
+        return
+      const_vector
+        name
+        age
+        None
+      guard_vector
+      line_number_map 3 3 3 4 4 4 2 2
+    __init__
+    lambda
+      name __lt__
+      param_count 2
+      local_count 0
+      label_count 2
+      insn_vector
+        load_local 1
+        load_field c0
+        load_local 0
+        load_field c0
+        jlt L0
+        load_const c1
+        jmp L1
+        label L0
+        load_const c2
+        label L1
+        return
+      const_vector
+        age
+        False
+        True
+      guard_vector
+      line_number_map 7 7 7 7 7 7 7 7 7 7 7
+    __lt__
+    lambda
+      name __ge__
+      param_count 2
+      local_count 0
+      label_count 2
+      insn_vector
+        load_local 1
+        load_field c0
+        load_local 0
+        load_field c0
+        jge L0
+        load_const c1
+        jmp L1
+        label L0
+        load_const c2
+        label L1
+        return
+      const_vector
+        age
+        False
+        True
+      guard_vector
+      line_number_map 10 10 10 10 10 10 10 10 10 10 10
+    __ge__
+    14.000000
+    "tom"
+    tom
+    12.000000
+    "jerry"
+    jerry
+    "tom is young"
+    "jerry is young"
+    "tom is old"
+    "jerry is old"
+    None
+  guard_vector
+  line_number_map 1 1 2 2 2 6 6 6 9 9 9 12 12 12 12 12 13 13 13 13 13 15 15 15 16 16 15 15 18 18 15 20 20 20 21 21 20 20 23 23 20 1 1

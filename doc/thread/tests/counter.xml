@@ -1,0 +1,173 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 0
+  label_count 9
+  insn_vector
+    load_module 0
+    load_field 1
+    load_this_module
+    store_field 1
+    load_module 0
+    load_field 2
+    load_this_module
+    store_field 2
+    load_const 3
+    store_global 4
+    load_global 2
+    call 0
+    store_global 5
+    new_class
+    store_global 6
+    load_global 1
+    load_global 6
+    inherit
+    load_const 7
+    load_global 6
+    store_field 8
+    load_const 9
+    load_global 6
+    store_field 10
+    new_list 0
+    store_global 11
+    load_const 12
+    load_global 13
+    call 1
+    iterator
+    jmp 1
+    label 0
+    store_global 14
+    load_global 14
+    load_global 6
+    call 1
+    store_global 15
+    load_global 15
+    load_global 11
+    load_field 16
+    call 1
+    pop
+    label 1
+    dup_top 0
+    next 0
+    pop
+    label 2
+    pop
+    load_global 11
+    iterator
+    jmp 4
+    label 3
+    store_global 15
+    load_global 15
+    load_field 17
+    call 0
+    pop
+    label 4
+    dup_top 0
+    next 3
+    pop
+    label 5
+    pop
+    load_global 11
+    iterator
+    jmp 7
+    label 6
+    store_global 15
+    load_global 15
+    load_field 18
+    call 0
+    pop
+    label 7
+    dup_top 0
+    next 6
+    pop
+    label 8
+    pop
+    load_global 4
+    print
+    load_const 19
+    return
+  const_vector
+    threading
+    Thread
+    Lock
+    0.000000
+    counter
+    lock
+    Worker
+    lambda
+      name __init__
+      param_count 2
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 0
+        load_global 0
+        load_field 1
+        call 1
+        pop
+        load_local 1
+        load_local 0
+        store_field 2
+        load_const 3
+        return
+      const_vector
+        Thread
+        __init__
+        name
+        None
+      guard_vector
+    __init__
+    lambda
+      name run
+      param_count 1
+      local_count 1
+      label_count 3
+      insn_vector
+        load_const 0
+        load_global 1
+        call 1
+        iterator
+        jmp 1
+        label 0
+        store_local -1
+        load_global 2
+        load_field 3
+        call 0
+        pop
+        load_const 4
+        load_global 5
+        add
+        store_global 5
+        load_global 2
+        load_field 6
+        call 0
+        pop
+        label 1
+        dup_top 0
+        next 0
+        pop
+        label 2
+        pop
+        load_const 7
+        return
+      const_vector
+        20000.000000
+        range
+        lock
+        acquire
+        1.000000
+        counter
+        release
+        None
+      guard_vector
+    run
+    workers
+    3.000000
+    range
+    i
+    worker
+    append
+    start
+    join
+    None
+  guard_vector

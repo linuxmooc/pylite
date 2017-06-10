@@ -1,0 +1,2 @@
+this = cast_object(argv[0], xxx)  py_class_is_subclass
+py_object_get_field, ERROR is determined by caller ?

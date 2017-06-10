@@ -1,0 +1,232 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 0
+  label_count 0
+  insn_vector
+    new_class c0
+    store_global c0
+    load_const c1
+    load_global c0
+    store_field c2
+    load_const c3
+    load_global c0
+    store_field c4
+    load_const c5
+    load_global c0
+    store_field c6
+    new_class c7
+    store_global c7
+    load_const c8
+    load_global c7
+    store_field c2
+    load_const c9
+    load_global c7
+    store_field c4
+    load_const c10
+    load_global c7
+    store_field c6
+    load_const c11
+    store_global c12
+    load_const c13
+    store_global c14
+    load_const c15
+    load_global c0
+    call 1
+    store_global c16
+    load_const c17
+    load_const c15
+    load_global c7
+    call 2
+    store_global c18
+    new_list 2
+    load_global c16
+    load_const c19
+    dup_top 2
+    store_item
+    load_global c18
+    load_const c20
+    dup_top 2
+    store_item
+    store_global c21
+    load_global c21
+    load_global c12
+    call 1
+    pop
+    load_global c21
+    load_global c14
+    call 1
+    pop
+    load_const c22
+    return
+  const_vector
+    Square
+    lambda
+      name __init__
+      param_count 2
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 1
+        load_local 0
+        store_field c0
+        load_const c1
+        return
+      const_vector
+        width
+        None
+      guard_vector
+      line_number_map 3 3 3 2 2
+    __init__
+    lambda
+      name area
+      param_count 1
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 0
+        load_field c0
+        load_local 0
+        load_field c0
+        mul
+        return
+      const_vector
+        width
+      guard_vector
+      line_number_map 6 6 6 6 6 6
+    area
+    lambda
+      name move
+      param_count 1
+      local_count 0
+      label_count 0
+      insn_vector
+        load_const c0
+        print
+        load_const c1
+        return
+      const_vector
+        "Square move"
+        None
+      guard_vector
+      line_number_map 9 9 8 8
+    move
+    Rectangle
+    lambda
+      name __init__
+      param_count 3
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 1
+        load_local 0
+        store_field c0
+        load_local 2
+        load_local 0
+        store_field c1
+        load_const c2
+        return
+      const_vector
+        width
+        height
+        None
+      guard_vector
+      line_number_map 13 13 13 14 14 14 12 12
+    lambda
+      name area
+      param_count 1
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 0
+        load_field c0
+        load_local 0
+        load_field c1
+        mul
+        return
+      const_vector
+        height
+        width
+      guard_vector
+      line_number_map 17 17 17 17 17 17
+    lambda
+      name move
+      param_count 1
+      local_count 0
+      label_count 0
+      insn_vector
+        load_const c0
+        print
+        load_const c1
+        return
+      const_vector
+        "Rectangle move"
+        None
+      guard_vector
+      line_number_map 20 20 19 19
+    lambda
+      name move_shape
+      param_count 1
+      local_count 0
+      label_count 0
+      insn_vector
+        load_const c0
+        load_local 0
+        load_item
+        load_field c1
+        call 0
+        pop
+        load_const c2
+        load_local 0
+        load_item
+        load_field c1
+        call 0
+        pop
+        load_const c3
+        return
+      const_vector
+        0.000000
+        move
+        1.000000
+        None
+      guard_vector
+      line_number_map 23 23 23 23 23 23 24 24 24 24 24 24 22 22
+    move_shape
+    lambda
+      name show_area
+      param_count 1
+      local_count 0
+      label_count 0
+      insn_vector
+        load_const c0
+        load_local 0
+        load_item
+        load_field c1
+        call 0
+        print
+        load_const c2
+        load_local 0
+        load_item
+        load_field c1
+        call 0
+        print
+        load_const c3
+        return
+      const_vector
+        0.000000
+        area
+        1.000000
+        None
+      guard_vector
+      line_number_map 27 27 27 27 27 27 28 28 28 28 28 28 26 26
+    show_area
+    10.000000
+    square
+    20.000000
+    rectangle
+    0.000000
+    1.000000
+    shapes
+    None
+  guard_vector
+  line_number_map 1 1 2 2 2 5 5 5 8 8 8 11 11 12 12 12 16 16 16 19 19 19 22 22 26 26 30 30 30 30 31 31 31 31 31 32 32 32 32 32 32 32 32 32 32 33 33 33 33 34 34 34 34 1 1

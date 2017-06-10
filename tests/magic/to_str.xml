@@ -1,0 +1,67 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 0
+  label_count 0
+  insn_vector
+    new_list 3
+    load_const c0
+    load_const c1
+    dup_top 2
+    store_item
+    load_const c2
+    load_const c0
+    dup_top 2
+    store_item
+    load_const c3
+    load_const c2
+    dup_top 2
+    store_item
+    store_global c4
+    load_global c4
+    print
+    load_const c5
+    load_const c6
+    load_const c7
+    new_tuple 3
+    store_global c8
+    load_global c8
+    print
+    new_dict
+    load_const c9
+    load_const c10
+    dup_top 2
+    store_item
+    load_const c11
+    load_const c12
+    dup_top 2
+    store_item
+    load_const c13
+    load_const c14
+    dup_top 2
+    store_item
+    store_global c15
+    load_global c15
+    print
+    load_const c16
+    return
+  const_vector
+    1.000000
+    0.000000
+    2.000000
+    3.000000
+    list
+    6.000000
+    5.000000
+    4.000000
+    tuple
+    "A"
+    "a"
+    "B"
+    "b"
+    "C"
+    "c"
+    dict
+    None
+  guard_vector
+  line_number_map 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 4 4 4 4 4 5 5 7 7 7 7 7 7 7 7 7 7 7 7 7 7 8 8 1 1

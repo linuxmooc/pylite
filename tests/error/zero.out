@@ -1,0 +1,3 @@
+Start
+ZeroDivisionError:
+  At zero.py, line 2, in __init__()

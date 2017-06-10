@@ -1,0 +1,84 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 0
+  label_count 0
+  insn_vector
+    new_class c0
+    store_global c0
+    load_const c1
+    load_global c0
+    store_field c2
+    load_const c3
+    load_global c0
+    store_field c4
+    load_const c5
+    load_global c0
+    store_field c6
+    load_global c0
+    call 0
+    store_global c7
+    load_const c8
+    load_global c7
+    load_item
+    print
+    load_const c9
+    load_const c10
+    load_global c7
+    store_item
+    load_const c11
+    return
+  const_vector
+    Map
+    lambda
+      name __init__
+      param_count 1
+      local_count 0
+      label_count 0
+      insn_vector
+        load_const c0
+        return
+      const_vector
+        None
+      guard_vector
+      line_number_map 2 2
+    __init__
+    lambda
+      name __getitem__
+      param_count 2
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 1
+        load_field c0
+        call 0
+        return
+      const_vector
+        upper
+      guard_vector
+      line_number_map 6 6 6 6
+    __getitem__
+    lambda
+      name __setitem__
+      param_count 3
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 1
+        print
+        load_local 2
+        print
+        load_const c0
+        return
+      const_vector
+        None
+      guard_vector
+      line_number_map 9 9 10 10 8 8
+    __setitem__
+    map
+    "abc"
+    "yyy"
+    "xxx"
+    None
+  guard_vector
+  line_number_map 1 1 2 2 2 5 5 5 8 8 8 12 12 12 13 13 13 13 14 14 14 14 1 1

@@ -1,0 +1,36 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 0
+  label_count 4
+  insn_vector
+    load_const c0
+    not
+    jfalse L1
+    load_const c1
+    print
+    jmp L0
+    label L1
+    load_const c2
+    print
+    label L0
+    load_const c3
+    not
+    jfalse L3
+    load_const c2
+    print
+    jmp L2
+    label L3
+    load_const c1
+    print
+    label L2
+    load_const c4
+    return
+  const_vector
+    True
+    "failed"
+    "ok"
+    False
+    None
+  guard_vector
+  line_number_map 1 1 1 2 2 1 1 4 4 1 6 6 6 7 7 6 6 9 9 6 1 1

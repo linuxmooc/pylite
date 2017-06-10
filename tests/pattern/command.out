@@ -1,0 +1,4 @@
+renaming foo.txt to bar.txt
+renaming bar.txt to baz.txt
+renaming bar.txt to foo.txt
+renaming baz.txt to bar.txt

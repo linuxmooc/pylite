@@ -1,0 +1,5 @@
+global start
+main start
+except
+finally
+global end

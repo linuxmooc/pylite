@@ -1,0 +1,61 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 0
+  label_count 0
+  insn_vector
+    load_const c0
+    store_global c1
+    load_global c1
+    call 0
+    pop
+    load_const c2
+    return
+  const_vector
+    lambda
+      name main
+      param_count 0
+      local_count 0
+      label_count 8
+      insn_vector
+        label L0
+        label L4
+        load_const c0
+        load_const c0
+        div
+        pop
+        label L5
+        jmp L7
+        label L6
+        pop
+        load_const c1
+        print
+        label L7
+        label L1
+        jmp L3
+        label L2
+        pop
+        load_const c2
+        print
+        label L3
+        load_const c3
+        return
+      const_vector
+        0.000000
+        "Inner Exception"
+        "Outter Exception"
+        None
+      guard_vector
+        guard
+          start L0
+          end L1
+          handler L2
+        guard
+          start L4
+          end L5
+          handler L6
+      line_number_map 4 4 4 4 4 4 4 4 4 4 6 6 4 4 4 4 4 8 8 4 1 1
+    main
+    None
+  guard_vector
+  line_number_map 1 1 10 10 10 1 1

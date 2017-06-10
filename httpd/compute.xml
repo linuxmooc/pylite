@@ -1,0 +1,65 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 0
+  label_count 0
+  insn_vector
+    load_const c0
+    store_global c1
+    load_const c2
+    return
+  const_vector
+    lambda
+      name handle
+      param_count 2
+      local_count 4
+      label_count 0
+      insn_vector
+        load_const c0
+        load_local 1
+        load_item
+        load_global c1
+        call 1
+        store_local -1
+        load_const c2
+        load_local 1
+        load_item
+        load_global c1
+        call 1
+        store_local -2
+        load_local -2
+        load_local -1
+        add
+        store_local -3
+        load_local -3
+        load_local -2
+        load_local -1
+        new_tuple 3
+        load_const c3
+        mod
+        store_local -4
+        load_const c4
+        load_local -4
+        add
+        store_local -4
+        load_local -4
+        load_local 0
+        load_field c5
+        call 1
+        pop
+        load_const c6
+        return
+      const_vector
+        "number1"
+        int
+        "number2"
+        "<h1>%d + %d = %d</h1>"
+        "<a href=/index.html>Back to index</a>"
+        echo_200
+        None
+      guard_vector
+      line_number_map 2 2 2 2 2 2 3 3 3 3 3 3 4 4 4 4 5 5 5 5 5 5 5 6 6 6 6 7 7 7 7 7 1 1
+    handle
+    None
+  guard_vector
+  line_number_map 1 1 1 1

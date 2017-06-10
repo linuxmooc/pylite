@@ -1,0 +1,35 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 0
+  label_count 2
+  insn_vector
+    load_module c0
+    load_field c1
+    load_this_module
+    store_field c1
+    load_global c1
+    call 0
+    store_global c2
+    load_const c3
+    load_global c2
+    jne L1
+    load_const c4
+    print
+    jmp L0
+    label L1
+    load_const c5
+    print
+    label L0
+    load_const c6
+    return
+  const_vector
+    os
+    fork
+    pid
+    0.000000
+    "Child"
+    "Parent"
+    None
+  guard_vector
+  line_number_map 1 1 1 1 3 3 3 4 4 4 5 5 4 4 7 7 4 1 1

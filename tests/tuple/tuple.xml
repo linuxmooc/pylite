@@ -1,0 +1,48 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 0
+  label_count 3
+  insn_vector
+    new_tuple 0
+    store_global c0
+    load_const c1
+    new_tuple 1
+    store_global c0
+    load_const c2
+    load_const c3
+    load_const c4
+    new_tuple 3
+    store_global c0
+    load_const c5
+    store_global c6
+    jmp L1
+    label L0
+    load_global c6
+    load_global c0
+    load_item
+    print
+    load_const c7
+    load_global c6
+    add
+    store_global c6
+    label L1
+    load_const c8
+    load_global c6
+    jlt L0
+    label L2
+    load_const c9
+    return
+  const_vector
+    tuple
+    123.000000
+    33.000000
+    22.000000
+    11.000000
+    0.000000
+    i
+    1.000000
+    3.000000
+    None
+  guard_vector
+  line_number_map 0 1 2 2 2 3 3 3 3 3 5 5 6 6 7 7 7 7 8 8 8 8 6 6 6 6 6 1 1

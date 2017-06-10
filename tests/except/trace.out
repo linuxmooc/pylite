@@ -1,0 +1,5 @@
+ZeroDivisionError:
+  At dummy.py, line 2, in c()
+  At trace.py, line 4, in b()
+  At trace.py, line 7, in a()
+  At trace.py, line 9, in __init__()

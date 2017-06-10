@@ -1,0 +1,50 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 1
+  label_count 3
+  insn_vector
+    load_module c0
+    load_this_module
+    store_field c0
+    load_const c1
+    load_const c2
+    load_global c3
+    call 2
+    store_global c4
+    load_global c4
+    iterator
+    store_local -1
+    jmp L1
+    label L0
+    store_global c5
+    load_global c5
+    load_global c0
+    load_field c6
+    load_field c7
+    call 1
+    pop
+    label L1
+    load_local -1
+    next L0
+    pop
+    label L2
+    load_global c4
+    load_field c8
+    call 0
+    pop
+    load_const c9
+    return
+  const_vector
+    sys
+    "r"
+    "file/iter.py"
+    open
+    file
+    line
+    stdout
+    write
+    close
+    None
+  guard_vector
+  line_number_map 1 1 1 3 3 3 3 3 4 4 4 4 4 4 5 5 5 5 5 5 4 4 4 4 4 6 6 6 6 1 1

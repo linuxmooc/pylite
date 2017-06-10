@@ -1,0 +1,111 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 0
+  label_count 0
+  insn_vector
+    load_const c0
+    store_global c1
+    new_list 6
+    load_const c2
+    load_const c3
+    dup_top 2
+    store_item
+    load_const c4
+    load_const c4
+    dup_top 2
+    store_item
+    load_const c5
+    load_const c6
+    dup_top 2
+    store_item
+    load_const c6
+    load_const c7
+    dup_top 2
+    store_item
+    load_const c8
+    load_const c9
+    dup_top 2
+    store_item
+    load_const c7
+    load_const c10
+    dup_top 2
+    store_item
+    load_const c11
+    load_global c1
+    call 2
+    print
+    load_const c12
+    return
+  const_vector
+    lambda
+      name filter
+      param_count 2
+      local_count 3
+      label_count 5
+      insn_vector
+        new_list 0
+        store_local -1
+        load_local 1
+        iterator
+        store_local -3
+        jmp L1
+        label L0
+        store_local -2
+        load_local -2
+        load_local 0
+        call 1
+        jfalse L4
+        load_local -2
+        load_local -1
+        load_field c0
+        call 1
+        pop
+        jmp L3
+        label L4
+        label L3
+        label L1
+        load_local -3
+        next L0
+        pop
+        label L2
+        load_local -1
+        return
+      const_vector
+        append
+      guard_vector
+      line_number_map 0 2 3 3 3 3 3 3 4 4 4 4 5 5 5 5 5 4 4 4 3 3 3 3 3 6 6
+    filter
+    -1.000000
+    0.000000
+    1.000000
+    -2.000000
+    2.000000
+    3.000000
+    -3.000000
+    4.000000
+    5.000000
+    lambda
+      name __anonymous__
+      param_count 1
+      local_count 0
+      label_count 2
+      insn_vector
+        load_const c0
+        load_local 0
+        jgt L0
+        load_const c1
+        jmp L1
+        label L0
+        load_const c2
+        label L1
+        return
+      const_vector
+        0.000000
+        False
+        True
+      guard_vector
+      line_number_map 8 8 8 8 8 8 8 8 8
+    None
+  guard_vector
+  line_number_map 1 1 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 1 1

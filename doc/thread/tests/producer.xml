@@ -1,0 +1,356 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 0
+  label_count 0
+  insn_vector
+    load_module 0
+    load_field 1
+    load_this_module
+    store_field 1
+    load_module 0
+    load_field 2
+    load_this_module
+    store_field 2
+    new_class
+    store_global 3
+    load_const 4
+    load_global 3
+    store_field 5
+    load_const 6
+    load_global 3
+    store_field 7
+    load_const 8
+    load_global 3
+    store_field 9
+    new_class
+    store_global 10
+    load_global 1
+    load_global 10
+    inherit
+    load_const 11
+    load_global 10
+    store_field 5
+    load_const 12
+    load_global 10
+    store_field 13
+    new_class
+    store_global 14
+    load_global 1
+    load_global 14
+    inherit
+    load_const 15
+    load_global 14
+    store_field 5
+    load_const 16
+    load_global 14
+    store_field 13
+    load_global 3
+    call 0
+    store_global 17
+    load_global 17
+    load_global 10
+    call 1
+    store_global 18
+    load_global 17
+    load_global 14
+    call 1
+    store_global 19
+    load_global 18
+    load_field 20
+    call 0
+    pop
+    load_global 19
+    load_field 20
+    call 0
+    pop
+    load_global 18
+    load_field 21
+    call 0
+    pop
+    load_global 19
+    load_field 21
+    call 0
+    pop
+    load_const 22
+    return
+  const_vector
+    threading
+    Thread
+    Condition
+    Buffer
+    lambda
+      name __init__
+      param_count 1
+      local_count 0
+      label_count 0
+      insn_vector
+        load_const 0
+        load_local 0
+        store_field 1
+        load_const 2
+        load_local 0
+        store_field 3
+        load_global 4
+        call 0
+        load_local 0
+        store_field 5
+        load_const 2
+        return
+      const_vector
+        0.000000
+        count
+        None
+        item
+        Condition
+        condition
+      guard_vector
+    __init__
+    lambda
+      name get
+      param_count 1
+      local_count 1
+      label_count 3
+      insn_vector
+        load_local 0
+        load_field 0
+        load_field 1
+        call 0
+        pop
+        jmp 1
+        label 0
+        load_local 0
+        load_field 0
+        load_field 2
+        call 0
+        pop
+        label 1
+        load_const 3
+        load_local 0
+        load_field 4
+        jeq 0
+        label 2
+        load_local 0
+        load_field 5
+        store_local -1
+        load_const 6
+        load_local 0
+        load_field 4
+        sub
+        load_local 0
+        store_field 4
+        load_local 0
+        load_field 0
+        load_field 7
+        call 0
+        pop
+        load_local 0
+        load_field 0
+        load_field 8
+        call 0
+        pop
+        load_local -1
+        return
+      const_vector
+        condition
+        acquire
+        wait
+        0.000000
+        count
+        item
+        1.000000
+        notify
+        release
+      guard_vector
+    get
+    lambda
+      name put
+      param_count 2
+      local_count 0
+      label_count 3
+      insn_vector
+        load_local 0
+        load_field 0
+        load_field 1
+        call 0
+        pop
+        jmp 1
+        label 0
+        load_local 0
+        load_field 0
+        load_field 2
+        call 0
+        pop
+        label 1
+        load_const 3
+        load_local 0
+        load_field 4
+        jeq 0
+        label 2
+        load_local 1
+        load_local 0
+        store_field 5
+        load_const 3
+        load_local 0
+        load_field 4
+        add
+        load_local 0
+        store_field 4
+        load_local 0
+        load_field 0
+        load_field 6
+        call 0
+        pop
+        load_local 0
+        load_field 0
+        load_field 7
+        call 0
+        pop
+        load_const 8
+        return
+      const_vector
+        condition
+        acquire
+        wait
+        1.000000
+        count
+        item
+        notify
+        release
+        None
+      guard_vector
+    put
+    Producer
+    lambda
+      name __init__
+      param_count 2
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 0
+        load_global 0
+        load_field 1
+        call 1
+        pop
+        load_local 1
+        load_local 0
+        store_field 2
+        load_const 3
+        return
+      const_vector
+        Thread
+        __init__
+        buffer
+        None
+      guard_vector
+    lambda
+      name run
+      param_count 1
+      local_count 2
+      label_count 3
+      insn_vector
+        load_const 0
+        load_global 1
+        call 1
+        iterator
+        jmp 1
+        label 0
+        store_local -1
+        load_local -1
+        load_local -1
+        add
+        store_local -2
+        load_local -2
+        load_local 0
+        load_field 2
+        load_field 3
+        call 1
+        pop
+        label 1
+        dup_top 0
+        next 0
+        pop
+        label 2
+        pop
+        load_const 4
+        return
+      const_vector
+        10.000000
+        range
+        buffer
+        put
+        None
+      guard_vector
+    run
+    Consumer
+    lambda
+      name __init__
+      param_count 2
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 0
+        load_global 0
+        load_field 1
+        call 1
+        pop
+        load_local 1
+        load_local 0
+        store_field 2
+        load_const 3
+        return
+      const_vector
+        Thread
+        __init__
+        buffer
+        None
+      guard_vector
+    lambda
+      name run
+      param_count 1
+      local_count 3
+      label_count 3
+      insn_vector
+        load_const 0
+        store_local -1
+        load_const 1
+        load_global 2
+        call 1
+        iterator
+        jmp 1
+        label 0
+        store_local -2
+        load_local 0
+        load_field 3
+        load_field 4
+        call 0
+        store_local -3
+        load_local -3
+        load_local -1
+        add
+        store_local -1
+        label 1
+        dup_top 0
+        next 0
+        pop
+        label 2
+        pop
+        load_local -1
+        print
+        load_const 5
+        return
+      const_vector
+        0.000000
+        10.000000
+        range
+        buffer
+        get
+        None
+      guard_vector
+    buffer
+    producer
+    consumer
+    start
+    join
+    None
+  guard_vector

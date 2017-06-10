@@ -1,0 +1,159 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 1
+  label_count 3
+  insn_vector
+    new_class c0
+    store_global c0
+    load_const c1
+    load_global c0
+    store_field c2
+    new_class c3
+    store_global c3
+    load_const c4
+    load_global c3
+    store_field c2
+    new_class c5
+    store_global c5
+    load_const c6
+    load_global c5
+    store_field c2
+    new_class c7
+    store_global c7
+    load_const c8
+    load_global c7
+    store_field c9
+    load_const c10
+    load_global c7
+    store_field c11
+    load_global c0
+    call 0
+    load_global c7
+    call 1
+    store_global c12
+    load_global c3
+    call 0
+    load_global c7
+    call 1
+    store_global c13
+    load_global c5
+    call 0
+    load_global c7
+    call 1
+    store_global c14
+    load_global c14
+    load_global c13
+    load_global c12
+    new_tuple 3
+    iterator
+    store_local -1
+    jmp L1
+    label L0
+    store_global c15
+    load_global c15
+    load_field c11
+    call 0
+    pop
+    label L1
+    load_local -1
+    next L0
+    pop
+    label L2
+    load_const c16
+    return
+  const_vector
+    AircraftStrategy
+    lambda
+      name execute
+      param_count 1
+      local_count 0
+      label_count 0
+      insn_vector
+        load_const c0
+        print
+        load_const c1
+        return
+      const_vector
+        "travel by Aircraft"
+        None
+      guard_vector
+      line_number_map 3 3 2 2
+    execute
+    TrainStrategy
+    lambda
+      name execute
+      param_count 1
+      local_count 0
+      label_count 0
+      insn_vector
+        load_const c0
+        print
+        load_const c1
+        return
+      const_vector
+        "travel by Train"
+        None
+      guard_vector
+      line_number_map 7 7 6 6
+    BicycleStrategy
+    lambda
+      name execute
+      param_count 1
+      local_count 0
+      label_count 0
+      insn_vector
+        load_const c0
+        print
+        load_const c1
+        return
+      const_vector
+        "travel by Bicycle"
+        None
+      guard_vector
+      line_number_map 11 11 10 10
+    Human
+    lambda
+      name __init__
+      param_count 2
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 1
+        load_local 0
+        store_field c0
+        load_const c1
+        return
+      const_vector
+        strategy
+        None
+      guard_vector
+      line_number_map 15 15 15 14 14
+    __init__
+    lambda
+      name travel
+      param_count 1
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 0
+        load_field c0
+        load_field c1
+        call 0
+        pop
+        load_const c2
+        return
+      const_vector
+        strategy
+        execute
+        None
+      guard_vector
+      line_number_map 18 18 18 18 18 17 17
+    travel
+    rich_man
+    norm_man
+    poor_man
+    man
+    None
+  guard_vector
+  line_number_map 1 1 2 2 2 5 5 6 6 6 9 9 10 10 10 13 13 14 14 14 17 17 17 20 20 20 20 20 21 21 21 21 21 22 22 22 22 22 23 23 23 23 23 23 23 23 23 24 24 24 24 23 23 23 23 23 1 1

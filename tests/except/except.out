@@ -1,0 +1,4 @@
+global start
+main start
+error
+global end

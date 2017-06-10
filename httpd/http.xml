@@ -1,0 +1,775 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 0
+  label_count 0
+  insn_vector
+    load_module c0
+    load_this_module
+    store_field c0
+    load_module c1
+    load_this_module
+    store_field c1
+    load_module c2
+    load_this_module
+    store_field c2
+    load_module c3
+    load_this_module
+    store_field c3
+    load_module c4
+    load_this_module
+    store_field c4
+    new_class c5
+    store_global c5
+    load_global c6
+    load_global c5
+    inherit
+    load_const c7
+    load_global c5
+    store_field c8
+    load_const c9
+    load_global c5
+    store_field c10
+    load_const c11
+    load_global c5
+    store_field c12
+    load_const c13
+    load_global c5
+    store_field c14
+    load_const c15
+    load_global c5
+    store_field c16
+    load_const c17
+    load_global c5
+    store_field c18
+    load_const c19
+    load_global c5
+    store_field c20
+    load_const c21
+    load_global c5
+    store_field c22
+    load_const c23
+    load_global c5
+    store_field c24
+    load_const c25
+    load_global c5
+    store_field c26
+    load_const c27
+    load_global c5
+    store_field c28
+    load_const c29
+    load_global c5
+    store_field c30
+    load_const c31
+    store_global c32
+    load_const c33
+    store_global c34
+    load_const c35
+    return
+  const_vector
+    os
+    sys
+    config
+    guess
+    compute
+    Stream
+    object
+    lambda
+      name __init__
+      param_count 2
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 1
+        load_local 0
+        store_field c0
+        load_const c1
+        load_local 0
+        load_field c0
+        load_field c2
+        call 1
+        load_local 0
+        store_field c3
+        load_const c4
+        load_local 0
+        load_field c0
+        load_field c2
+        call 1
+        load_local 0
+        store_field c5
+        load_const c6
+        return
+      const_vector
+        socket
+        "rb"
+        makefile
+        reader
+        "wb"
+        writer
+        None
+      guard_vector
+      line_number_map 9 9 9 10 10 10 10 10 10 10 11 11 11 11 11 11 11 8 8
+    __init__
+    lambda
+      name put_string
+      param_count 2
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 1
+        load_local 0
+        load_field c0
+        load_field c1
+        call 1
+        pop
+        load_const c2
+        return
+      const_vector
+        writer
+        write
+        None
+      guard_vector
+      line_number_map 14 14 14 14 14 14 13 13
+    put_string
+    lambda
+      name put_header
+      param_count 3
+      local_count 1
+      label_count 0
+      insn_vector
+        load_local 2
+        load_local 1
+        new_tuple 2
+        load_const c0
+        mod
+        store_local -1
+        load_local -1
+        load_local 0
+        load_field c1
+        load_field c2
+        call 1
+        pop
+        load_const c3
+        return
+      const_vector
+        "%s: %s\r\n"
+        writer
+        write
+        None
+      guard_vector
+      line_number_map 17 17 17 17 17 17 18 18 18 18 18 18 16 16
+    put_header
+    lambda
+      name new_line
+      param_count 1
+      local_count 0
+      label_count 0
+      insn_vector
+        load_const c0
+        load_local 0
+        load_field c1
+        load_field c2
+        call 1
+        pop
+        load_const c3
+        return
+      const_vector
+        "\r\n"
+        writer
+        write
+        None
+      guard_vector
+      line_number_map 21 21 21 21 21 21 20 20
+    new_line
+    lambda
+      name close
+      param_count 1
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 0
+        load_field c0
+        load_field c1
+        call 0
+        pop
+        load_local 0
+        load_field c2
+        load_field c3
+        call 0
+        pop
+        load_const c4
+        return
+      const_vector
+        writer
+        flush
+        socket
+        close
+        None
+      guard_vector
+      line_number_map 24 24 24 24 24 25 25 25 25 25 23 23
+    close
+    lambda
+      name echo
+      param_count 3
+      local_count 0
+      label_count 2
+      insn_vector
+        load_global c0
+        load_field c1
+        jfalse L1
+        load_local 1
+        load_const c2
+        mod
+        print
+        jmp L0
+        label L1
+        label L0
+        load_local 1
+        load_const c3
+        mod
+        load_local 0
+        load_field c4
+        call 1
+        pop
+        load_const c5
+        load_const c6
+        load_local 0
+        load_field c7
+        call 2
+        pop
+        load_const c8
+        load_const c9
+        load_local 0
+        load_field c7
+        call 2
+        pop
+        load_local 2
+        load_global c10
+        call 1
+        load_const c11
+        load_local 0
+        load_field c7
+        call 2
+        pop
+        load_const c12
+        load_const c13
+        load_local 0
+        load_field c7
+        call 2
+        pop
+        load_local 0
+        load_field c14
+        call 0
+        pop
+        load_local 2
+        load_local 0
+        load_field c4
+        call 1
+        pop
+        load_const c15
+        return
+      const_vector
+        config
+        verbose
+        "HTTP/1.0 %s"
+        "HTTP/1.0 %s\r\n"
+        put_string
+        "Pyserver"
+        "Server"
+        put_header
+        "text/html"
+        "Content-Type"
+        len
+        "Content-Length"
+        "close"
+        "Connection"
+        new_line
+        None
+      guard_vector
+      line_number_map 28 28 28 29 29 29 29 28 28 28 30 30 30 30 30 30 30 31 31 31 31 31 31 32 32 32 32 32 32 33 33 33 33 33 33 33 33 34 34 34 34 34 34 35 35 35 35 36 36 36 36 36 27 27
+    echo
+    lambda
+      name echo_200
+      param_count 2
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 1
+        load_const c0
+        load_local 0
+        load_field c1
+        call 2
+        pop
+        load_const c2
+        return
+      const_vector
+        "200 OK"
+        echo
+        None
+      guard_vector
+      line_number_map 39 39 39 39 39 39 38 38
+    echo_200
+    lambda
+      name echo_404
+      param_count 1
+      local_count 0
+      label_count 0
+      insn_vector
+        load_const c0
+        load_const c1
+        load_local 0
+        load_field c2
+        call 2
+        pop
+        load_const c3
+        return
+      const_vector
+        "<b>File Not Found</b>"
+        "404 Not Found"
+        echo
+        None
+      guard_vector
+      line_number_map 42 42 42 42 42 42 41 41
+    echo_404
+    lambda
+      name echo_400
+      param_count 1
+      local_count 0
+      label_count 0
+      insn_vector
+        load_const c0
+        load_const c1
+        load_local 0
+        load_field c2
+        call 2
+        pop
+        load_const c3
+        return
+      const_vector
+        "<h1>400 Bad Request</h1>"
+        "400 Bad Request"
+        echo
+        None
+      guard_vector
+      line_number_map 45 45 45 45 45 45 44 44
+    echo_400
+    lambda
+      name echo_500
+      param_count 1
+      local_count 0
+      label_count 0
+      insn_vector
+        load_const c0
+        load_const c1
+        load_local 0
+        load_field c2
+        call 2
+        pop
+        load_const c3
+        return
+      const_vector
+        "<h1>500 Internal Error</h1>"
+        "500 Internal Error"
+        echo
+        None
+      guard_vector
+      line_number_map 48 48 48 48 48 48 47 47
+    echo_500
+    lambda
+      name echo_file
+      param_count 2
+      local_count 5
+      label_count 9
+      insn_vector
+        load_const c0
+        load_local 1
+        jne L1
+        load_const c1
+        store_local 1
+        jmp L0
+        label L1
+        label L0
+        load_local 1
+        load_const c2
+        add
+        store_local -1
+        load_global c3
+        load_field c4
+        load_local -1
+        load_global c3
+        load_field c5
+        call 2
+        not
+        jfalse L3
+        load_local 0
+        load_field c6
+        call 0
+        pop
+        load_const c7
+        return
+        jmp L2
+        label L3
+        label L2
+        new_list 0
+        store_local -2
+        load_const c8
+        load_local -1
+        load_global c9
+        call 2
+        store_local -3
+        jmp L5
+        label L4
+        load_const c10
+        load_local -3
+        load_field c11
+        call 1
+        store_local -4
+        load_local -4
+        not
+        jfalse L8
+        jmp L6
+        jmp L7
+        label L8
+        label L7
+        load_local -4
+        load_local -2
+        load_field c12
+        call 1
+        pop
+        label L5
+        load_const c13
+        jtrue L4
+        label L6
+        load_local -3
+        load_field c14
+        call 0
+        pop
+        load_local -2
+        load_const c15
+        load_field c16
+        call 1
+        store_local -5
+        load_local -5
+        load_local 0
+        load_field c17
+        call 1
+        pop
+        load_const c7
+        return
+      const_vector
+        "/"
+        "/index.html"
+        "www"
+        os
+        R_OK
+        access
+        echo_404
+        None
+        "r"
+        open
+        64.000000
+        read
+        append
+        True
+        close
+        ""
+        join
+        echo_200
+      guard_vector
+      line_number_map 51 51 51 52 52 51 51 51 53 53 53 53 54 54 54 54 54 54 54 54 55 55 55 55 0 0 54 54 54 0 58 59 59 59 59 59 60 60 61 61 61 61 61 62 62 62 0 62 62 62 64 64 64 64 64 60 60 60 60 65 65 65 65 66 66 66 66 66 67 67 67 67 67 50 50
+    echo_file
+    lambda
+      name get_request
+      param_count 1
+      local_count 1
+      label_count 2
+      insn_vector
+        load_local 0
+        load_field c0
+        load_field c1
+        call 0
+        store_local -1
+        load_global c2
+        load_field c3
+        jfalse L1
+        load_local -1
+        load_global c4
+        load_field c5
+        load_field c6
+        call 1
+        pop
+        jmp L0
+        label L1
+        label L0
+        load_local -1
+        return
+      const_vector
+        reader
+        readline
+        config
+        verbose
+        sys
+        stdout
+        write
+      guard_vector
+      line_number_map 70 70 70 70 70 71 71 71 72 72 72 72 72 72 71 71 71 73 73
+    get_request
+    lambda
+      name handle_dynamic
+      param_count 2
+      local_count 10
+      label_count 9
+      insn_vector
+        new_dict
+        store_local -1
+        load_const c0
+        load_local 1
+        load_field c1
+        call 1
+        store_local -2
+        load_const c2
+        load_local -2
+        jlt L1
+        load_const c3
+        load_const c4
+        load_local -2
+        add
+        new_slice
+        load_local 1
+        load_item
+        store_local -3
+        load_const c5
+        load_local -3
+        load_field c6
+        call 1
+        store_local -4
+        load_local -4
+        iterator
+        store_local -6
+        jmp L3
+        label L2
+        store_local -5
+        load_const c7
+        load_local -5
+        load_field c6
+        call 1
+        load_const c2
+        dup_top 1
+        load_item
+        store_local -7
+        load_const c4
+        dup_top 1
+        load_item
+        store_local -8
+        pop
+        load_local -8
+        load_local -7
+        load_local -1
+        store_item
+        label L3
+        load_local -6
+        next L2
+        pop
+        label L4
+        jmp L0
+        label L1
+        label L0
+        load_global c8
+        load_field c9
+        jfalse L6
+        load_local -1
+        print
+        jmp L5
+        label L6
+        label L5
+        load_const c10
+        load_local -2
+        sub
+        load_const c4
+        new_slice
+        load_local 1
+        load_item
+        store_local -9
+        load_global c8
+        load_field c9
+        jfalse L8
+        load_local -9
+        load_const c11
+        mod
+        print
+        jmp L7
+        label L8
+        label L7
+        load_local -9
+        load_global c12
+        call 1
+        store_local -10
+        load_local -1
+        load_local 0
+        load_local -10
+        load_field c13
+        call 2
+        pop
+        load_const c3
+        return
+      const_vector
+        "?"
+        find
+        0.000000
+        None
+        1.000000
+        "&"
+        split
+        "="
+        config
+        verbose
+        3.000000
+        "__import__(%s)"
+        __import__
+        handle
+      guard_vector
+      line_number_map 0 76 77 77 77 77 77 78 78 78 79 79 79 79 79 79 79 79 80 80 80 80 80 81 81 81 81 81 81 82 82 82 82 82 82 82 82 82 82 82 82 82 83 83 83 83 81 81 81 81 81 78 78 78 84 84 84 85 85 84 84 84 91 91 91 91 91 91 91 91 92 92 92 93 93 93 93 92 92 92 94 94 94 94 95 95 95 95 95 95 75 75
+    handle_dynamic
+    lambda
+      name handle
+      param_count 1
+      local_count 8
+      label_count 14
+      insn_vector
+        load_local 0
+        load_global c0
+        call 1
+        store_local -1
+        label L0
+        label L4
+        load_local -1
+        load_field c1
+        call 0
+        store_local -2
+        load_const c2
+        load_local -2
+        load_field c3
+        call 1
+        store_local -3
+        load_const c4
+        load_local -3
+        load_global c5
+        call 1
+        jge L9
+        load_local -1
+        load_field c6
+        call 0
+        pop
+        load_const c7
+        store_local -4
+        finally_call L2
+        load_local -4
+        return
+        jmp L8
+        label L9
+        label L8
+        load_const c8
+        load_local -3
+        load_item
+        store_local -5
+        load_const c9
+        load_local -3
+        load_item
+        store_local -6
+        load_const c10
+        load_local -3
+        load_item
+        store_local -7
+        load_const c11
+        load_local -5
+        jne L11
+        load_const c12
+        load_const c13
+        load_local -6
+        load_field c14
+        call 1
+        jeq L13
+        load_local -6
+        load_local -1
+        load_global c15
+        call 2
+        pop
+        jmp L12
+        label L13
+        load_local -6
+        load_local -1
+        load_field c16
+        call 1
+        pop
+        label L12
+        jmp L10
+        label L11
+        load_local -1
+        load_field c6
+        call 0
+        pop
+        label L10
+        label L5
+        jmp L7
+        label L6
+        load_global c17
+        catch
+        store_global c18
+        load_global c18
+        print
+        label L7
+        label L1
+        jmp L3
+        label L2
+        store_local -8
+        load_local -1
+        load_field c19
+        call 0
+        pop
+        load_const c8
+        load_global c20
+        load_field c21
+        call 1
+        pop
+        finally_exit -8
+        label L3
+        finally_call L2
+        load_const c7
+        return
+      const_vector
+        Stream
+        get_request
+        " "
+        split
+        3.000000
+        len
+        echo_400
+        None
+        0.000000
+        1.000000
+        2.000000
+        "GET"
+        -1.000000
+        ".py"
+        find
+        handle_dynamic
+        echo_file
+        Exception
+        error
+        close
+        sys
+        exit
+      guard_vector
+        guard
+          start L0
+          end L1
+          handler L2
+        guard
+          start L4
+          end L5
+          handler L6
+      line_number_map 98 98 98 98 100 100 100 100 100 100 101 101 101 101 101 103 103 103 103 103 104 104 104 104 0 0 0 0 0 103 103 103 106 106 106 106 107 107 107 107 108 108 108 108 110 110 110 111 111 111 111 111 111 112 112 112 112 112 111 111 114 114 114 114 114 111 110 110 116 116 116 116 110 100 100 100 100 100 100 118 118 100 100 100 100 100 120 120 120 120 121 121 121 121 121 100 100 100 97 97
+    handle
+    None
+  guard_vector
+  line_number_map 1 1 1 2 2 2 3 3 3 4 4 4 5 5 5 7 7 7 7 7 8 8 8 13 13 13 16 16 16 20 20 20 23 23 23 27 27 27 38 38 38 41 41 41 44 44 44 47 47 47 50 50 50 69 69 69 75 75 97 97 1 1

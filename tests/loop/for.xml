@@ -1,0 +1,131 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 1
+  label_count 7
+  insn_vector
+    load_const c0
+    store_global c1
+    load_global c1
+    call 0
+    pop
+    new_list 8
+    load_const c2
+    load_const c3
+    dup_top 2
+    store_item
+    load_const c4
+    load_const c5
+    dup_top 2
+    store_item
+    load_const c3
+    load_const c6
+    dup_top 2
+    store_item
+    load_const c5
+    load_const c7
+    dup_top 2
+    store_item
+    load_const c6
+    load_const c8
+    dup_top 2
+    store_item
+    load_const c7
+    load_const c9
+    dup_top 2
+    store_item
+    load_const c8
+    load_const c10
+    dup_top 2
+    store_item
+    load_const c9
+    load_const c11
+    dup_top 2
+    store_item
+    iterator
+    store_local -1
+    jmp L1
+    label L0
+    store_global c12
+    load_const c3
+    load_global c12
+    jge L4
+    jmp L1
+    jmp L3
+    label L4
+    label L3
+    load_global c12
+    print
+    load_const c7
+    load_global c12
+    jlt L6
+    jmp L2
+    jmp L5
+    label L6
+    label L5
+    label L1
+    load_local -1
+    next L0
+    pop
+    label L2
+    load_const c13
+    return
+  const_vector
+    lambda
+      name f
+      param_count 0
+      local_count 2
+      label_count 3
+      insn_vector
+        new_list 3
+        load_const c0
+        load_const c1
+        dup_top 2
+        store_item
+        load_const c2
+        load_const c3
+        dup_top 2
+        store_item
+        load_const c4
+        load_const c5
+        dup_top 2
+        store_item
+        iterator
+        store_local -2
+        jmp L1
+        label L0
+        store_local -1
+        load_local -1
+        print
+        label L1
+        load_local -2
+        next L0
+        pop
+        label L2
+        load_const c6
+        return
+      const_vector
+        11.000000
+        0.000000
+        22.000000
+        1.000000
+        33.000000
+        2.000000
+        None
+      guard_vector
+      line_number_map 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 2 2 2 2 2 1 1
+    f
+    -2.000000
+    0.000000
+    -1.000000
+    1.000000
+    2.000000
+    3.000000
+    4.000000
+    5.000000
+    6.000000
+    7.000000
+    i
+    None
+  guard_vector
+  line_number_map 1 1 4 4 4 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 7 7 7 0 7 7 7 9 9 10 10 10 0 10 10 10 6 6 6 6 6 1 1

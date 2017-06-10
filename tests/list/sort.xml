@@ -1,0 +1,174 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 0
+  label_count 0
+  insn_vector
+    load_const c0
+    store_global c1
+    load_const c2
+    store_global c3
+    new_list 8
+    load_const c4
+    load_const c5
+    dup_top 2
+    store_item
+    load_const c5
+    load_const c6
+    dup_top 2
+    store_item
+    load_const c7
+    load_const c8
+    dup_top 2
+    store_item
+    load_const c6
+    load_const c9
+    dup_top 2
+    store_item
+    load_const c10
+    load_const c4
+    dup_top 2
+    store_item
+    load_const c8
+    load_const c7
+    dup_top 2
+    store_item
+    load_const c11
+    load_const c10
+    dup_top 2
+    store_item
+    load_const c9
+    load_const c11
+    dup_top 2
+    store_item
+    store_global c12
+    load_global c12
+    load_global c3
+    call 1
+    pop
+    load_global c12
+    load_global c1
+    call 1
+    pop
+    load_const c13
+    return
+  const_vector
+    lambda
+      name print_vector
+      param_count 1
+      local_count 2
+      label_count 3
+      insn_vector
+        load_const c0
+        store_local -1
+        load_const c1
+        store_local -2
+        jmp L1
+        label L0
+        load_local -2
+        load_local 0
+        load_item
+        print
+        load_const c2
+        load_local -2
+        add
+        store_local -2
+        label L1
+        load_local -1
+        load_local -2
+        jlt L0
+        label L2
+        load_const c3
+        return
+      const_vector
+        8.000000
+        0.000000
+        1.000000
+        None
+      guard_vector
+      line_number_map 2 2 3 3 4 4 5 5 5 5 6 6 6 6 4 4 4 4 4 1 1
+    print_vector
+    lambda
+      name select_sort
+      param_count 1
+      local_count 5
+      label_count 8
+      insn_vector
+        load_const c0
+        store_local -1
+        load_const c1
+        store_local -2
+        jmp L1
+        label L0
+        load_local -2
+        store_local -3
+        load_local -2
+        store_local -4
+        jmp L4
+        label L3
+        load_local -3
+        load_local 0
+        load_item
+        load_local -4
+        load_local 0
+        load_item
+        jge L7
+        load_local -4
+        store_local -3
+        jmp L6
+        label L7
+        label L6
+        load_const c2
+        load_local -4
+        add
+        store_local -4
+        label L4
+        load_local -1
+        load_local -4
+        jlt L3
+        label L5
+        load_local -3
+        load_local 0
+        load_item
+        store_local -5
+        load_local -2
+        load_local 0
+        load_item
+        load_local -3
+        load_local 0
+        store_item
+        load_local -5
+        load_local -2
+        load_local 0
+        store_item
+        load_const c2
+        load_local -2
+        add
+        store_local -2
+        label L1
+        load_local -1
+        load_local -2
+        jlt L0
+        label L2
+        load_const c3
+        return
+      const_vector
+        8.000000
+        0.000000
+        1.000000
+        None
+      guard_vector
+      line_number_map 9 9 10 10 11 11 12 12 13 13 14 14 15 15 15 15 15 15 15 16 16 15 15 15 17 17 17 17 14 14 14 14 14 18 18 18 18 19 19 19 19 19 19 20 20 20 20 21 21 21 21 11 11 11 11 11 8 8
+    select_sort
+    4.000000
+    0.000000
+    1.000000
+    5.000000
+    2.000000
+    3.000000
+    6.000000
+    7.000000
+    vector
+    None
+  guard_vector
+  line_number_map 1 1 8 8 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 24 24 24 24 25 25 25 25 1 1

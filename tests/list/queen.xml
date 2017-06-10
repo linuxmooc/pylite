@@ -1,0 +1,213 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 0
+  label_count 0
+  insn_vector
+    load_const c0
+    store_global c1
+    load_const c2
+    store_global c3
+    load_const c4
+    store_global c5
+    load_global c5
+    call 0
+    pop
+    load_const c6
+    return
+  const_vector
+    lambda
+      name is_safe
+      param_count 2
+      local_count 1
+      label_count 6
+      insn_vector
+        load_const c0
+        store_local -1
+        jmp L1
+        label L0
+        load_local 1
+        load_local 0
+        load_item
+        load_local -1
+        load_local 0
+        load_item
+        jeq L5
+        load_local 1
+        load_local 0
+        load_item
+        load_local -1
+        load_local 0
+        load_item
+        sub
+        load_local -1
+        load_local 1
+        sub
+        jeq L5
+        load_local -1
+        load_local 0
+        load_item
+        load_local 1
+        load_local 0
+        load_item
+        sub
+        load_local -1
+        load_local 1
+        sub
+        jne L4
+        label L5
+        load_const c1
+        return
+        jmp L3
+        label L4
+        label L3
+        load_const c2
+        load_local -1
+        add
+        store_local -1
+        label L1
+        load_local 1
+        load_local -1
+        jlt L0
+        label L2
+        load_const c3
+        return
+      const_vector
+        0.000000
+        False
+        1.000000
+        True
+      guard_vector
+      line_number_map 2 2 3 3 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 5 5 4 4 4 6 6 6 6 3 3 3 3 3 7 7
+    is_safe
+    lambda
+      name place
+      param_count 2
+      local_count 3
+      label_count 7
+      insn_vector
+        load_const c0
+        store_local -1
+        load_local 0
+        load_global c1
+        call 1
+        store_local -2
+        load_local -2
+        load_local 1
+        jne L1
+        load_const c2
+        return
+        jmp L0
+        label L1
+        label L0
+        load_const c0
+        store_local -3
+        jmp L3
+        label L2
+        load_local -3
+        load_local 1
+        load_local 0
+        store_item
+        load_local 1
+        load_local 0
+        load_global c3
+        call 2
+        jfalse L6
+        load_const c2
+        load_local 1
+        add
+        load_local 0
+        load_global c4
+        call 2
+        load_local -1
+        add
+        store_local -1
+        jmp L5
+        label L6
+        label L5
+        load_const c2
+        load_local -3
+        add
+        store_local -3
+        label L3
+        load_local -2
+        load_local -3
+        jlt L2
+        label L4
+        load_local -1
+        return
+      const_vector
+        0.000000
+        len
+        1.000000
+        is_safe
+        place
+      guard_vector
+      line_number_map 10 10 11 11 11 11 12 12 12 13 13 12 12 12 14 14 15 15 16 16 16 16 17 17 17 17 17 18 18 18 18 18 18 18 18 18 17 17 17 19 19 19 19 15 15 15 15 15 20 20
+    place
+    lambda
+      name main
+      param_count 0
+      local_count 2
+      label_count 0
+      insn_vector
+        new_list 8
+        load_const c0
+        load_const c0
+        dup_top 2
+        store_item
+        load_const c0
+        load_const c1
+        dup_top 2
+        store_item
+        load_const c0
+        load_const c2
+        dup_top 2
+        store_item
+        load_const c0
+        load_const c3
+        dup_top 2
+        store_item
+        load_const c0
+        load_const c4
+        dup_top 2
+        store_item
+        load_const c0
+        load_const c5
+        dup_top 2
+        store_item
+        load_const c0
+        load_const c6
+        dup_top 2
+        store_item
+        load_const c0
+        load_const c7
+        dup_top 2
+        store_item
+        store_local -1
+        load_const c0
+        load_local -1
+        load_global c8
+        call 2
+        store_local -2
+        load_local -2
+        print
+        load_const c9
+        return
+      const_vector
+        0.000000
+        1.000000
+        2.000000
+        3.000000
+        4.000000
+        5.000000
+        6.000000
+        7.000000
+        place
+        None
+      guard_vector
+      line_number_map 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 24 24 24 24 24 25 25 22 22
+    main
+    None
+  guard_vector
+  line_number_map 1 1 9 9 22 22 27 27 27 1 1

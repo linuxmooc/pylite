@@ -1,0 +1,61 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 0
+  label_count 0
+  insn_vector
+    load_module 0
+    load_field 1
+    load_this_module
+    store_field 1
+    load_const 2
+    store_global 3
+    load_const 4
+    store_global 5
+    load_global 5
+    load_const 6
+    load_global 3
+    call 2
+    print
+    load_const 7
+    return
+  const_vector
+    threading
+    Thread
+    lambda
+      name add
+      param_count 2
+      local_count 2
+      label_count 3
+      insn_vector
+        load_const 0
+        store_local -1
+        load_local 0
+        store_local -2
+        jmp 1
+        label 0
+        load_const 1
+        load_local -1
+        add
+        store_local -1
+        load_const 1
+        load_local -2
+        add
+        store_local -2
+        label 1
+        load_local 1
+        load_local -2
+        jlt 0
+        label 2
+        load_local -1
+        return
+      const_vector
+        0.000000
+        1.000000
+      guard_vector
+    add
+    320000.000000
+    n
+    0.000000
+    None
+  guard_vector

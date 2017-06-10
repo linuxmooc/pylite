@@ -1,0 +1,5 @@
+global start
+try
+before return
+finally
+global end

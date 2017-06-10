@@ -1,0 +1,8 @@
+caller cleanup the stack
+
+callee cleanup the stack
+1. py_object_t *native(int argc)，弹出参数
+2. py_object_t *vm_call(int argc)，弹出参数
+3. 解释OP_CALL指令时，弹出参数
+
+

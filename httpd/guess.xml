@@ -1,0 +1,75 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 0
+  label_count 0
+  insn_vector
+    load_const c0
+    store_global c1
+    load_const c2
+    return
+  const_vector
+    lambda
+      name handle
+      param_count 2
+      local_count 3
+      label_count 3
+      insn_vector
+        load_const c0
+        load_local 1
+        load_item
+        load_global c1
+        call 1
+        store_local -1
+        load_const c2
+        store_local -2
+        load_local -2
+        load_local -1
+        jge L1
+        load_local -1
+        load_const c3
+        mod
+        store_local -3
+        jmp L0
+        label L1
+        load_local -2
+        load_local -1
+        jle L2
+        load_local -1
+        load_const c4
+        mod
+        store_local -3
+        jmp L0
+        label L2
+        load_local -2
+        load_const c5
+        mod
+        store_local -3
+        label L0
+        load_const c6
+        load_local -3
+        add
+        store_local -3
+        load_local -3
+        load_local 0
+        load_field c7
+        call 1
+        pop
+        load_const c8
+        return
+      const_vector
+        "number"
+        int
+        5.000000
+        "Number %d is less than the answer"
+        "Number %d is greater than the answer"
+        "Congratulations! Answer is %d"
+        "<br><a href=/index.html>Back to index</a>"
+        echo_200
+        None
+      guard_vector
+      line_number_map 2 2 2 2 2 2 3 3 4 4 4 5 5 5 5 4 4 4 4 4 7 7 7 7 4 4 9 9 9 9 4 10 10 10 10 11 11 11 11 11 1 1
+    handle
+    None
+  guard_vector
+  line_number_map 1 1 1 1

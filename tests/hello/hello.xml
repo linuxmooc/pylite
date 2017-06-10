@@ -1,0 +1,15 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 0
+  label_count 0
+  insn_vector
+    load_const c0
+    print
+    load_const c1
+    return
+  const_vector
+    "HELLO WORLD!"
+    None
+  guard_vector
+  line_number_map 1 1 1 1

@@ -1,0 +1,72 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 0
+  label_count 0
+  insn_vector
+    load_const c0
+    store_global c1
+    load_const c2
+    load_global c1
+    call 1
+    load_const c3
+    mod
+    print
+    load_const c4
+    return
+  const_vector
+    lambda
+      name leibniz
+      param_count 1
+      local_count 3
+      label_count 3
+      insn_vector
+        load_const c0
+        store_local -1
+        load_const c1
+        store_local -2
+        load_const c0
+        store_local -3
+        jmp L1
+        label L0
+        load_const c1
+        load_local -3
+        load_const c2
+        mul
+        add
+        load_local -2
+        div
+        load_local -1
+        add
+        store_local -1
+        load_const c3
+        load_local -2
+        mul
+        store_local -2
+        load_const c1
+        load_local -3
+        add
+        store_local -3
+        label L1
+        load_local 0
+        load_local -3
+        jlt L0
+        label L2
+        load_const c4
+        load_local -1
+        mul
+        return
+      const_vector
+        0.000000
+        1.000000
+        2.000000
+        -1.000000
+        4.000000
+      guard_vector
+      line_number_map 2 2 3 3 4 4 5 5 6 6 6 6 6 6 6 6 6 6 7 7 7 7 8 8 8 8 5 5 5 5 5 9 9 9 9
+    leibniz
+    54321.000000
+    "pi = %f"
+    None
+  guard_vector
+  line_number_map 1 1 11 11 11 11 11 11 1 1

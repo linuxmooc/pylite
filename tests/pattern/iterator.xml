@@ -1,0 +1,144 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 1
+  label_count 3
+  insn_vector
+    new_class c0
+    store_global c0
+    load_const c1
+    load_global c0
+    store_field c2
+    load_const c3
+    load_global c0
+    store_field c4
+    load_const c5
+    load_global c0
+    store_field c6
+    load_global c0
+    call 0
+    iterator
+    store_local -1
+    jmp L1
+    label L0
+    store_global c7
+    load_global c7
+    print
+    label L1
+    load_local -1
+    next L0
+    pop
+    label L2
+    load_const c8
+    return
+  const_vector
+    Counter
+    lambda
+      name __init__
+      param_count 1
+      local_count 0
+      label_count 0
+      insn_vector
+        new_list 5
+        load_const c0
+        load_const c1
+        dup_top 2
+        store_item
+        load_const c2
+        load_const c3
+        dup_top 2
+        store_item
+        load_const c4
+        load_const c5
+        dup_top 2
+        store_item
+        load_const c6
+        load_const c7
+        dup_top 2
+        store_item
+        load_const c8
+        load_const c9
+        dup_top 2
+        store_item
+        load_local 0
+        store_field c10
+        load_const c1
+        load_local 0
+        store_field c11
+        load_const c12
+        return
+      const_vector
+        "one"
+        0.000000
+        "two"
+        1.000000
+        "three"
+        2.000000
+        "four"
+        3.000000
+        "five"
+        4.000000
+        numbers
+        index
+        None
+      guard_vector
+      line_number_map 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 4 4 4 2 2
+    __init__
+    lambda
+      name __iter__
+      param_count 1
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 0
+        return
+      const_vector
+      guard_vector
+      line_number_map 7 7
+    __iter__
+    lambda
+      name __next__
+      param_count 1
+      local_count 1
+      label_count 2
+      insn_vector
+        load_local 0
+        load_field c0
+        load_global c1
+        call 1
+        load_local 0
+        load_field c2
+        jlt L1
+        load_global c3
+        call 0
+        raise
+        jmp L0
+        label L1
+        label L0
+        load_local 0
+        load_field c2
+        load_local 0
+        load_field c0
+        load_item
+        store_local -1
+        load_const c4
+        load_local 0
+        load_field c2
+        add
+        load_local 0
+        store_field c2
+        load_local -1
+        return
+      const_vector
+        numbers
+        len
+        index
+        StopIteration
+        1.000000
+      guard_vector
+      line_number_map 10 10 10 10 10 10 10 11 11 11 10 10 10 13 13 13 13 13 13 14 14 14 14 14 14 15 15
+    __next__
+    number
+    None
+  guard_vector
+  line_number_map 1 1 2 2 2 6 6 6 9 9 9 17 17 17 17 17 17 17 18 18 17 17 17 17 17 1 1

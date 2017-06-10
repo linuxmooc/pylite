@@ -1,0 +1,4 @@
+Start
+TypeError:
+  At raise3.py, line 2, in main()
+  At raise3.py, line 5, in __init__()

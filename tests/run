@@ -1,0 +1,58 @@
+#!/bin/sh
+
+test()
+{
+    pyvm $PY_FILE >$OUT_LOG 2>&1
+    diff $OUT_FILE $OUT_LOG >/dev/null 2>&1
+    if [ $? -eq 0 ]
+    then
+        STATUS=√
+        HIGH_ON=""
+        HIGH_OFF=""
+    else
+        STATUS=×
+        HIGH_ON="\033[1m"
+        HIGH_OFF="\033[m"
+        echo $PY_FILE >>$ERROR_LIST
+        cat $OUT_LOG >>$ERROR_LOG
+    fi
+
+    printf "${HIGH_ON}Test %02d: %-32s${STATUS}${HIGH_OFF}\n" $INDEX $PY_FILE
+}
+
+check_executable()
+{
+    which $1 >/dev/null
+    if [ $? -ne 0 ]
+    then
+        echo "Command '$1' is not found in PATH!"
+        exit
+    fi
+}
+
+check_executable pyvm
+check_executable pycom
+
+ERROR_LIST=error.list
+ERROR_LOG=error.log
+OUT_LOG=out.log
+rm -f $ERROR_LIST $ERROR_LOG $OUT_LOG
+
+INDEX=0
+DIRS=`find . -mindepth 1 -maxdepth 1 -type d`
+for PY_FILE in `find . -name *.py`
+do
+    OUT_FILE=`echo $PY_FILE | sed -e 's/.py$/.out/'`
+    XML_FILE=`echo $PY_FILE | sed -e 's/.py$/.xml/'`
+    test $INDEX $PY_FILE $OUT_FILE
+    INDEX=`expr $INDEX + 1`
+done
+
+echo 
+if [ -f $ERROR_LIST ]; then
+    echo "The following test failed:"
+    cat $ERROR_LIST
+else
+    echo "All the test succeed!"
+fi
+rm -f core

@@ -1,0 +1,9 @@
+What are the rules for local and global variables in Python?
+
+In Python, variables that are only referenced inside a function are implicitly global. 
+
+If a variable is assigned a value anywhere within the function’s body, it’s assumed to be a local unless explicitly declared as global.
+
+Though a bit surprising at first, a moment’s consideration explains this. On one hand, requiring global for assigned variables provides a bar against unintended side-effects. On the other hand, if global was required for all global references, you’d be using global all the time. You’d have to declare as global every reference to a built-in function or to a component of an imported module. This clutter would defeat the usefulness of the global declaration for identifying side-effects.
+
+

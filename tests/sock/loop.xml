@@ -1,0 +1,251 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 0
+  label_count 2
+  insn_vector
+    load_module c0
+    load_this_module
+    store_field c0
+    load_module c1
+    load_this_module
+    store_field c1
+    load_module c2
+    load_this_module
+    store_field c2
+    load_const c3
+    store_global c4
+    load_const c5
+    store_global c6
+    load_const c7
+    store_global c8
+    load_const c9
+    store_global c10
+    load_const c11
+    store_global c12
+    load_global c1
+    load_field c13
+    call 0
+    store_global c14
+    load_const c15
+    load_global c14
+    jne L1
+    load_global c12
+    call 0
+    pop
+    load_global c10
+    call 0
+    pop
+    jmp L0
+    label L1
+    load_global c8
+    call 0
+    pop
+    label L0
+    load_const c16
+    return
+  const_vector
+    socket
+    os
+    sys
+    "localhost"
+    HOST
+    8080.000000
+    PORT
+    lambda
+      name run_server
+      param_count 0
+      local_count 4
+      label_count 0
+      insn_vector
+        load_const c0
+        load_global c1
+        load_field c2
+        load_global c1
+        load_field c3
+        load_global c1
+        load_field c1
+        call 3
+        store_local -1
+        load_const c4
+        load_global c1
+        load_field c5
+        load_global c1
+        load_field c6
+        load_local -1
+        load_field c7
+        call 3
+        pop
+        load_global c8
+        load_global c9
+        new_tuple 2
+        load_local -1
+        load_field c10
+        call 1
+        pop
+        load_const c11
+        load_local -1
+        load_field c12
+        call 1
+        pop
+        load_local -1
+        load_field c13
+        call 0
+        load_const c0
+        dup_top 1
+        load_item
+        store_local -2
+        load_const c4
+        dup_top 1
+        load_item
+        store_local -3
+        pop
+        load_const c14
+        load_local -2
+        load_field c15
+        call 1
+        store_local -4
+        load_local -4
+        load_field c16
+        call 0
+        store_local -4
+        load_local -4
+        load_local -2
+        load_field c17
+        call 1
+        pop
+        load_local -2
+        load_field c18
+        call 0
+        pop
+        load_const c0
+        load_global c19
+        load_field c20
+        call 1
+        pop
+        load_const c21
+        return
+      const_vector
+        0.000000
+        socket
+        SOCK_STREAM
+        AF_INET
+        1.000000
+        SO_REUSEADDR
+        SOL_SOCKET
+        setsockopt
+        PORT
+        HOST
+        bind
+        64.000000
+        listen
+        accept
+        1024.000000
+        recv
+        upper
+        send
+        close
+        sys
+        exit
+        None
+      guard_vector
+      line_number_map 9 9 9 9 9 9 9 9 9 10 10 10 10 10 10 10 10 10 11 11 11 11 11 11 11 12 12 12 12 12 14 14 14 14 14 14 14 14 14 14 14 14 15 15 15 15 15 16 16 16 16 17 17 17 17 17 18 18 18 18 19 19 19 19 19 8 8
+    run_server
+    lambda
+      name run_client
+      param_count 0
+      local_count 2
+      label_count 0
+      insn_vector
+        load_const c0
+        load_global c1
+        load_field c2
+        load_global c1
+        load_field c3
+        load_global c1
+        load_field c1
+        call 3
+        store_local -1
+        load_global c4
+        load_global c5
+        new_tuple 2
+        load_local -1
+        load_field c6
+        call 1
+        pop
+        load_const c7
+        store_local -2
+        load_local -2
+        load_local -1
+        load_field c8
+        call 1
+        pop
+        load_const c9
+        load_local -1
+        load_field c10
+        call 1
+        store_local -2
+        load_local -2
+        load_const c11
+        mod
+        print
+        load_const c0
+        load_global c12
+        load_field c13
+        call 1
+        pop
+        load_const c14
+        return
+      const_vector
+        0.000000
+        socket
+        SOCK_STREAM
+        AF_INET
+        PORT
+        HOST
+        connect
+        "hello world!"
+        send
+        32.000000
+        recv
+        "client recv: %s"
+        sys
+        exit
+        None
+      guard_vector
+      line_number_map 22 22 22 22 22 22 22 22 22 23 23 23 23 23 23 23 24 24 25 25 25 25 25 26 26 26 26 26 27 27 27 27 28 28 28 28 28 21 21
+    run_client
+    lambda
+      name delay
+      param_count 0
+      local_count 2
+      label_count 3
+      insn_vector
+        load_const c0
+        load_global c1
+        call 1
+        iterator
+        store_local -2
+        jmp L1
+        label L0
+        store_local -1
+        label L1
+        load_local -2
+        next L0
+        pop
+        label L2
+        load_const c2
+        return
+      const_vector
+        1234567.000000
+        range
+        None
+      guard_vector
+      line_number_map 31 31 31 31 31 31 31 31 31 31 31 31 31 30 30
+    delay
+    fork
+    pid
+    0.000000
+    None
+  guard_vector
+  line_number_map 1 1 1 2 2 2 3 3 3 5 5 6 6 8 8 21 21 30 30 34 34 34 34 35 35 35 36 36 36 37 37 37 35 35 39 39 39 35 1 1

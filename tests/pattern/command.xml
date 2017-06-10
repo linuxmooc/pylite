@@ -1,0 +1,170 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 2
+  label_count 6
+  insn_vector
+    new_class c0
+    store_global c0
+    load_const c1
+    load_global c0
+    store_field c2
+    load_const c3
+    load_global c0
+    store_field c4
+    load_const c5
+    load_global c0
+    store_field c6
+    load_const c7
+    load_global c0
+    store_field c8
+    new_list 0
+    store_global c9
+    load_const c10
+    load_const c11
+    load_global c0
+    call 2
+    load_global c9
+    load_field c12
+    call 1
+    pop
+    load_const c13
+    load_const c10
+    load_global c0
+    call 2
+    load_global c9
+    load_field c12
+    call 1
+    pop
+    load_global c9
+    iterator
+    store_local -1
+    jmp L1
+    label L0
+    store_global c14
+    load_global c14
+    load_field c4
+    call 0
+    pop
+    label L1
+    load_local -1
+    next L0
+    pop
+    label L2
+    load_global c9
+    iterator
+    store_local -2
+    jmp L4
+    label L3
+    store_global c14
+    load_global c14
+    load_field c6
+    call 0
+    pop
+    label L4
+    load_local -2
+    next L3
+    pop
+    label L5
+    load_const c15
+    return
+  const_vector
+    MoveFileCommand
+    lambda
+      name __init__
+      param_count 3
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 1
+        load_local 0
+        store_field c0
+        load_local 2
+        load_local 0
+        store_field c1
+        load_const c2
+        return
+      const_vector
+        src
+        dest
+        None
+      guard_vector
+      line_number_map 3 3 3 4 4 4 2 2
+    __init__
+    lambda
+      name execute
+      param_count 1
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 0
+        load_field c0
+        load_local 0
+        load_field c1
+        load_local 0
+        load_field c2
+        call 2
+        pop
+        load_const c3
+        return
+      const_vector
+        dest
+        src
+        rename
+        None
+      guard_vector
+      line_number_map 7 7 7 7 7 7 7 7 6 6
+    execute
+    lambda
+      name undo
+      param_count 1
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 0
+        load_field c0
+        load_local 0
+        load_field c1
+        load_local 0
+        load_field c2
+        call 2
+        pop
+        load_const c3
+        return
+      const_vector
+        src
+        dest
+        rename
+        None
+      guard_vector
+      line_number_map 10 10 10 10 10 10 10 10 9 9
+    undo
+    lambda
+      name rename
+      param_count 3
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 2
+        load_local 1
+        new_tuple 2
+        load_const c0
+        mod
+        print
+        load_const c1
+        return
+      const_vector
+        "renaming %s to %s"
+        None
+      guard_vector
+      line_number_map 13 13 13 13 13 13 12 12
+    rename
+    commands
+    "bar.txt"
+    "foo.txt"
+    append
+    "baz.txt"
+    command
+    None
+  guard_vector
+  line_number_map 1 1 2 2 2 6 6 6 9 9 9 12 12 12 0 15 16 16 16 16 16 16 16 16 17 17 17 17 17 17 17 17 19 19 19 19 19 19 20 20 20 20 19 19 19 19 19 22 22 22 22 22 22 23 23 23 23 22 22 22 22 22 1 1

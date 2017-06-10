@@ -1,0 +1,88 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 0
+  label_count 16
+  insn_vector
+    load_const c0
+    load_const c1
+    jeq L0
+    load_const c2
+    jmp L1
+    label L0
+    load_const c3
+    label L1
+    print
+    load_const c1
+    load_const c0
+    jeq L2
+    load_const c2
+    jmp L3
+    label L2
+    load_const c3
+    label L3
+    print
+    load_const c2
+    load_const c3
+    jeq L4
+    load_const c2
+    jmp L5
+    label L4
+    load_const c3
+    label L5
+    print
+    load_const c3
+    load_const c2
+    jeq L6
+    load_const c2
+    jmp L7
+    label L6
+    load_const c3
+    label L7
+    print
+    load_const c3
+    load_const c3
+    jeq L8
+    load_const c2
+    jmp L9
+    label L8
+    load_const c3
+    label L9
+    print
+    load_const c2
+    load_const c2
+    jeq L10
+    load_const c2
+    jmp L11
+    label L10
+    load_const c3
+    label L11
+    print
+    load_const c3
+    load_const c4
+    jeq L12
+    load_const c2
+    jmp L13
+    label L12
+    load_const c3
+    label L13
+    print
+    load_const c4
+    load_const c3
+    jeq L14
+    load_const c2
+    jmp L15
+    label L14
+    load_const c3
+    label L15
+    print
+    load_const c1
+    return
+  const_vector
+    1.000000
+    None
+    False
+    True
+    "A"
+  guard_vector
+  line_number_map 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 4 4 4 4 4 4 4 4 4 5 5 5 5 5 5 5 5 5 7 7 7 7 7 7 7 7 7 8 8 8 8 8 8 8 8 8 10 10 10 10 10 10 10 10 10 11 11 11 11 11 11 11 11 11 1 1

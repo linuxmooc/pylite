@@ -1,0 +1,83 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 2
+  label_count 6
+  insn_vector
+    new_list 2
+    load_const c0
+    load_const c1
+    new_tuple 2
+    load_const c2
+    dup_top 2
+    store_item
+    load_const c3
+    load_const c4
+    new_tuple 2
+    load_const c1
+    dup_top 2
+    store_item
+    iterator
+    store_local -1
+    jmp L1
+    label L0
+    store_global c5
+    load_global c5
+    print
+    label L1
+    load_local -1
+    next L0
+    pop
+    label L2
+    new_list 2
+    load_const c0
+    load_const c1
+    new_tuple 2
+    load_const c2
+    dup_top 2
+    store_item
+    load_const c3
+    load_const c4
+    new_tuple 2
+    load_const c1
+    dup_top 2
+    store_item
+    iterator
+    store_local -2
+    jmp L4
+    label L3
+    load_const c2
+    dup_top 1
+    load_item
+    store_global c6
+    load_const c1
+    dup_top 1
+    load_item
+    store_global c7
+    pop
+    load_global c7
+    load_global c6
+    new_tuple 2
+    load_const c8
+    mod
+    print
+    label L4
+    load_local -2
+    next L3
+    pop
+    label L5
+    load_const c9
+    return
+  const_vector
+    2.000000
+    1.000000
+    0.000000
+    4.000000
+    3.000000
+    pair
+    a
+    b
+    "%d %d"
+    None
+  guard_vector
+  line_number_map 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 1 1 1 1 1 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 5 5 5 5 5 5 4 4 4 4 4 1 1

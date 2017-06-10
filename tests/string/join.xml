@@ -1,0 +1,40 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 0
+  label_count 0
+  insn_vector
+    load_const c0
+    store_global c1
+    new_list 3
+    load_const c2
+    load_const c3
+    dup_top 2
+    store_item
+    load_const c4
+    load_const c5
+    dup_top 2
+    store_item
+    load_const c6
+    load_const c7
+    dup_top 2
+    store_item
+    load_global c1
+    load_field c8
+    call 1
+    print
+    load_const c9
+    return
+  const_vector
+    ":"
+    string
+    "a"
+    0.000000
+    "b"
+    1.000000
+    "c"
+    2.000000
+    join
+    None
+  guard_vector
+  line_number_map 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1 1

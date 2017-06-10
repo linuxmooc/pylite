@@ -1,0 +1,6 @@
+Start
+ZeroDivisionError:
+  At as1.py, line 3, in __init__()
+
+Finally
+End

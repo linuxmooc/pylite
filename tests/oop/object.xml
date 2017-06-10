@@ -1,0 +1,49 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 0
+  label_count 0
+  insn_vector
+    new_class c0
+    store_global c0
+    load_global c1
+    load_global c0
+    inherit
+    load_const c2
+    load_global c0
+    store_field c3
+    load_const c4
+    load_global c0
+    call 1
+    store_global c5
+    load_global c5
+    load_field c6
+    print
+    load_const c7
+    return
+  const_vector
+    Human
+    object
+    lambda
+      name __init__
+      param_count 2
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 1
+        load_local 0
+        store_field c0
+        load_const c1
+        return
+      const_vector
+        name
+        None
+      guard_vector
+      line_number_map 3 3 3 2 2
+    __init__
+    "Tom"
+    human
+    name
+    None
+  guard_vector
+  line_number_map 1 1 1 1 1 2 2 2 5 5 5 5 6 6 6 1 1

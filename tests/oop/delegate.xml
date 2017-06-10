@@ -1,0 +1,279 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 0
+  label_count 0
+  insn_vector
+    new_class c0
+    store_global c0
+    load_const c1
+    load_global c0
+    store_field c2
+    load_const c3
+    load_global c0
+    store_field c4
+    load_const c5
+    load_global c0
+    store_field c6
+    new_class c7
+    store_global c7
+    load_const c8
+    load_global c7
+    store_field c2
+    load_const c9
+    load_global c7
+    store_field c10
+    new_class c11
+    store_global c11
+    load_const c12
+    load_global c11
+    store_field c2
+    load_const c13
+    load_global c11
+    store_field c10
+    load_const c14
+    store_global c10
+    load_const c15
+    load_const c16
+    load_global c0
+    call 2
+    store_global c17
+    load_const c18
+    load_global c7
+    call 1
+    store_global c19
+    load_const c20
+    load_global c11
+    call 1
+    store_global c21
+    load_global c10
+    load_global c17
+    load_field c4
+    call 1
+    pop
+    load_global c19
+    load_field c10
+    load_global c17
+    load_field c4
+    call 1
+    pop
+    load_global c21
+    load_field c10
+    load_global c17
+    load_field c4
+    call 1
+    pop
+    load_const c22
+    load_global c17
+    load_field c6
+    call 1
+    pop
+    load_const c23
+    load_global c17
+    load_field c6
+    call 1
+    pop
+    load_const c24
+    return
+  const_vector
+    Stock
+    lambda
+      name __init__
+      param_count 3
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 1
+        load_local 0
+        store_field c0
+        load_local 2
+        load_local 0
+        store_field c1
+        new_list 0
+        load_local 0
+        store_field c2
+        load_const c3
+        return
+      const_vector
+        name
+        price
+        observers
+        None
+      guard_vector
+      line_number_map 3 3 3 4 4 4 0 5 5 2 2
+    __init__
+    lambda
+      name add_observer
+      param_count 2
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 1
+        load_local 0
+        load_field c0
+        load_field c1
+        call 1
+        pop
+        load_const c2
+        return
+      const_vector
+        observers
+        append
+        None
+      guard_vector
+      line_number_map 8 8 8 8 8 8 7 7
+    add_observer
+    lambda
+      name update
+      param_count 2
+      local_count 2
+      label_count 3
+      insn_vector
+        load_local 0
+        load_field c0
+        load_const c1
+        mod
+        print
+        load_local 1
+        load_local 0
+        load_field c2
+        add
+        load_local 0
+        store_field c2
+        load_local 0
+        load_field c3
+        iterator
+        store_local -2
+        jmp L1
+        label L0
+        store_local -1
+        load_local 0
+        load_field c2
+        load_local -1
+        call 1
+        pop
+        label L1
+        load_local -2
+        next L0
+        pop
+        label L2
+        load_const c4
+        print
+        load_const c5
+        return
+      const_vector
+        name
+        "The stock price of %s has changed\n"
+        price
+        observers
+        ""
+        None
+      guard_vector
+      line_number_map 11 11 11 11 11 12 12 12 12 12 12 14 14 14 14 14 14 14 15 15 15 15 15 14 14 14 14 14 0 0 10 10
+    update
+    Kitten
+    lambda
+      name __init__
+      param_count 2
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 1
+        load_local 0
+        store_field c0
+        load_const c1
+        return
+      const_vector
+        name
+        None
+      guard_vector
+      line_number_map 20 20 20 19 19
+    lambda
+      name notify
+      param_count 2
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 1
+        load_local 0
+        load_field c0
+        new_tuple 2
+        load_const c1
+        mod
+        print
+        load_const c2
+        return
+      const_vector
+        name
+        "To kitten %s, Current price is %d"
+        None
+      guard_vector
+      line_number_map 23 23 23 23 23 23 23 22 22
+    notify
+    Mice
+    lambda
+      name __init__
+      param_count 2
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 1
+        load_local 0
+        store_field c0
+        load_const c1
+        return
+      const_vector
+        name
+        None
+      guard_vector
+      line_number_map 27 27 27 26 26
+    lambda
+      name notify
+      param_count 2
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 1
+        load_local 0
+        load_field c0
+        new_tuple 2
+        load_const c1
+        mod
+        print
+        load_const c2
+        return
+      const_vector
+        name
+        "To mice %s, Current price is %d"
+        None
+      guard_vector
+      line_number_map 30 30 30 30 30 30 30 29 29
+    lambda
+      name notify
+      param_count 1
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 0
+        load_const c0
+        mod
+        print
+        load_const c1
+        return
+      const_vector
+        "To function, Current price is %d"
+        None
+      guard_vector
+      line_number_map 33 33 33 33 32 32
+    100.000000
+    "GOOGLE"
+    stock
+    "Tom"
+    tom
+    "Jerry"
+    jerry
+    10.000000
+    -20.000000
+    None
+  guard_vector
+  line_number_map 1 1 2 2 2 7 7 7 10 10 10 18 18 19 19 19 22 22 22 25 25 26 26 26 29 29 29 32 32 35 35 35 35 35 36 36 36 36 37 37 37 37 39 39 39 39 39 40 40 40 40 40 40 41 41 41 41 41 41 42 42 42 42 42 43 43 43 43 43 1 1

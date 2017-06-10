@@ -1,0 +1,13 @@
+zgw@T500:/home/cc/pymini/doc/GIL/v0$ time ./parallel 
+pi = 3.141593
+
+real    0m0.388s
+user    0m0.760s
+sys     0m0.004s
+
+zgw@T500:/home/cc/pymini/doc/GIL/v0$ time ./serial 
+pi = 3.141593
+
+real    0m0.715s
+user    0m0.712s
+sys     0m0.000s

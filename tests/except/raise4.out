@@ -1,0 +1,4 @@
+Start
+MyException:
+  At raise4.py, line 5, in main()
+  At raise4.py, line 8, in __init__()

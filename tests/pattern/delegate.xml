@@ -1,0 +1,250 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 0
+  label_count 0
+  insn_vector
+    new_class c0
+    store_global c0
+    load_const c1
+    load_global c0
+    store_field c2
+    load_const c3
+    load_global c0
+    store_field c4
+    new_class c5
+    store_global c5
+    load_const c6
+    load_global c5
+    store_field c2
+    load_const c7
+    load_global c5
+    store_field c8
+    new_class c9
+    store_global c9
+    load_const c10
+    load_global c9
+    store_field c2
+    load_const c11
+    load_global c9
+    store_field c12
+    new_class c13
+    store_global c13
+    load_const c14
+    load_global c13
+    store_field c2
+    load_const c15
+    load_global c13
+    store_field c16
+    load_const c17
+    store_global c18
+    load_global c18
+    call 0
+    pop
+    load_const c19
+    return
+  const_vector
+    Dog
+    lambda
+      name __init__
+      param_count 1
+      local_count 0
+      label_count 0
+      insn_vector
+        load_const c0
+        load_local 0
+        store_field c1
+        load_const c2
+        return
+      const_vector
+        "Dog"
+        name
+        None
+      guard_vector
+      line_number_map 3 3 3 2 2
+    __init__
+    lambda
+      name bark
+      param_count 1
+      local_count 0
+      label_count 0
+      insn_vector
+        load_const c0
+        return
+      const_vector
+        "woof"
+      guard_vector
+      line_number_map 6 6
+    bark
+    Cat
+    lambda
+      name __init__
+      param_count 1
+      local_count 0
+      label_count 0
+      insn_vector
+        load_const c0
+        load_local 0
+        store_field c1
+        load_const c2
+        return
+      const_vector
+        "Cat"
+        name
+        None
+      guard_vector
+      line_number_map 10 10 10 9 9
+    lambda
+      name meow
+      param_count 1
+      local_count 0
+      label_count 0
+      insn_vector
+        load_const c0
+        return
+      const_vector
+        "meow"
+      guard_vector
+      line_number_map 13 13
+    meow
+    Human
+    lambda
+      name __init__
+      param_count 1
+      local_count 0
+      label_count 0
+      insn_vector
+        load_const c0
+        load_local 0
+        store_field c1
+        load_const c2
+        return
+      const_vector
+        "Human"
+        name
+        None
+      guard_vector
+      line_number_map 17 17 17 16 16
+    lambda
+      name speak
+      param_count 1
+      local_count 0
+      label_count 0
+      insn_vector
+        load_const c0
+        return
+      const_vector
+        "hello"
+      guard_vector
+      line_number_map 20 20
+    speak
+    Adapter
+    lambda
+      name __init__
+      param_count 2
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 1
+        load_local 0
+        store_field c0
+        load_const c1
+        return
+      const_vector
+        method
+        None
+      guard_vector
+      line_number_map 24 24 24 23 23
+    lambda
+      name make_noise
+      param_count 1
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 0
+        load_field c0
+        call 0
+        print
+        load_const c1
+        return
+      const_vector
+        method
+        None
+      guard_vector
+      line_number_map 27 27 27 27 26 26
+    make_noise
+    lambda
+      name main
+      param_count 0
+      local_count 6
+      label_count 3
+      insn_vector
+        new_list 0
+        store_local -1
+        load_global c0
+        call 0
+        store_local -2
+        load_local -2
+        load_field c1
+        load_global c2
+        call 1
+        load_local -1
+        load_field c3
+        call 1
+        pop
+        load_global c4
+        call 0
+        store_local -3
+        load_local -3
+        load_field c5
+        load_global c2
+        call 1
+        load_local -1
+        load_field c3
+        call 1
+        pop
+        load_global c6
+        call 0
+        store_local -4
+        load_local -4
+        load_field c7
+        load_global c2
+        call 1
+        load_local -1
+        load_field c3
+        call 1
+        pop
+        load_local -1
+        iterator
+        store_local -6
+        jmp L1
+        label L0
+        store_local -5
+        load_local -5
+        load_field c8
+        call 0
+        pop
+        label L1
+        load_local -6
+        next L0
+        pop
+        label L2
+        load_const c9
+        return
+      const_vector
+        Dog
+        bark
+        Adapter
+        append
+        Cat
+        meow
+        Human
+        speak
+        make_noise
+        None
+      guard_vector
+      line_number_map 0 30 32 32 32 33 33 33 33 33 33 33 33 35 35 35 36 36 36 36 36 36 36 36 38 38 38 39 39 39 39 39 39 39 39 41 41 41 41 41 41 42 42 42 42 41 41 41 41 41 29 29
+    main
+    None
+  guard_vector
+  line_number_map 1 1 2 2 2 5 5 5 8 8 9 9 9 12 12 12 15 15 16 16 16 19 19 19 22 22 23 23 23 26 26 26 29 29 44 44 44 1 1

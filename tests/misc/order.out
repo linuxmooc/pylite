@@ -1,0 +1,17 @@
+left() + right()
+right
+left
+
+call(left(), right())
+right
+left
+
+array()[index()]
+index
+array
+
+array()[index()] = value()
+value
+index
+array
+

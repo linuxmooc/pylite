@@ -1,0 +1,59 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 0
+  label_count 0
+  insn_vector
+    load_module c0
+    load_field c1
+    load_this_module
+    store_field c1
+    load_const c2
+    store_global c3
+    load_const c4
+    store_global c5
+    load_global c5
+    call 0
+    pop
+    load_const c6
+    return
+  const_vector
+    dummy
+    c
+    lambda
+      name b
+      param_count 0
+      local_count 0
+      label_count 0
+      insn_vector
+        load_global c0
+        call 0
+        pop
+        load_const c1
+        return
+      const_vector
+        c
+        None
+      guard_vector
+      line_number_map 4 4 4 3 3
+    b
+    lambda
+      name a
+      param_count 0
+      local_count 0
+      label_count 0
+      insn_vector
+        load_global c0
+        call 0
+        pop
+        load_const c1
+        return
+      const_vector
+        b
+        None
+      guard_vector
+      line_number_map 7 7 7 6 6
+    a
+    None
+  guard_vector
+  line_number_map 1 1 1 1 3 3 6 6 9 9 9 1 1

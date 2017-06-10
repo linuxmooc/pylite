@@ -1,0 +1,61 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 0
+  label_count 0
+  insn_vector
+    load_const c0
+    store_global c1
+    load_const c2
+    print
+    load_global c1
+    call 0
+    pop
+    load_const c3
+    print
+    load_const c4
+    return
+  const_vector
+    lambda
+      name main
+      param_count 0
+      local_count 1
+      label_count 4
+      insn_vector
+        label L0
+        load_const c0
+        print
+        load_const c1
+        load_const c1
+        div
+        pop
+        label L1
+        jmp L3
+        label L2
+        store_local -1
+        load_const c2
+        print
+        load_const c3
+        return
+        finally_exit -1
+        label L3
+        finally_call L2
+        load_const c3
+        return
+      const_vector
+        "try"
+        0.000000
+        "finally"
+        None
+      guard_vector
+        guard
+          start L0
+          end L1
+          handler L2
+      line_number_map 3 3 3 4 4 4 4 3 3 3 3 6 6 0 0 3 3 3 1 1
+    main
+    "global start"
+    "global end"
+    None
+  guard_vector
+  line_number_map 1 1 9 9 10 10 10 11 11 1 1

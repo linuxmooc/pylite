@@ -1,0 +1,52 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 0
+  label_count 0
+  insn_vector
+    load_const c0
+    store_global c1
+    load_const c2
+    load_global c1
+    call 1
+    print
+    load_const c3
+    return
+  const_vector
+    lambda
+      name fib
+      param_count 1
+      local_count 0
+      label_count 2
+      insn_vector
+        load_const c0
+        load_local 0
+        jge L1
+        load_const c1
+        return
+        jmp L0
+        label L1
+        label L0
+        load_const c1
+        load_local 0
+        sub
+        load_global c2
+        call 1
+        load_const c0
+        load_local 0
+        sub
+        load_global c2
+        call 1
+        add
+        return
+      const_vector
+        2.000000
+        1.000000
+        fib
+      guard_vector
+      line_number_map 2 2 2 3 3 2 2 2 4 4 4 4 4 4 4 4 4 4 4 4
+    fib
+    8.000000
+    None
+  guard_vector
+  line_number_map 1 1 6 6 6 6 1 1

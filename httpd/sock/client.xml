@@ -1,0 +1,91 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 0
+  label_count 5
+  insn_vector
+    load_module 0
+    load_this_module
+    store_field 0
+    load_module 1
+    load_this_module
+    store_field 1
+    load_const 2
+    store_global 3
+    load_const 4
+    store_global 5
+    load_const 6
+    load_global 0
+    load_field 7
+    load_global 0
+    load_field 8
+    load_global 0
+    load_field 0
+    call 3
+    store_global 9
+    load_global 5
+    load_global 3
+    new_tuple 2
+    load_global 9
+    load_field 10
+    call 1
+    pop
+    load_const 11
+    load_global 9
+    load_field 12
+    call 1
+    pop
+    load_const 13
+    load_global 9
+    load_field 12
+    call 1
+    pop
+    jmp 1
+    label 0
+    load_const 14
+    load_global 9
+    load_field 15
+    call 1
+    store_global 16
+    load_global 16
+    not
+    jfalse 4
+    jmp 2
+    jmp 3
+    label 4
+    label 3
+    load_global 16
+    load_global 1
+    load_field 17
+    load_field 18
+    call 1
+    pop
+    label 1
+    load_const 19
+    jtrue 0
+    label 2
+    load_const 20
+    return
+  const_vector
+    socket
+    sys
+    "localhost"
+    HOST
+    80.000000
+    PORT
+    0.000000
+    SOCK_STREAM
+    AF_INET
+    client
+    connect
+    "GET /index.html HTTP/1.0\r\n"
+    send
+    "\r\n"
+    32.000000
+    recv
+    data
+    stdout
+    write
+    True
+    None
+  guard_vector

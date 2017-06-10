@@ -1,0 +1,34 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 1
+  label_count 3
+  insn_vector
+    load_const c0
+    load_const c1
+    load_const c2
+    load_global c3
+    call 3
+    iterator
+    store_local -1
+    jmp L1
+    label L0
+    store_global c4
+    load_global c4
+    print
+    label L1
+    load_local -1
+    next L0
+    pop
+    label L2
+    load_const c5
+    return
+  const_vector
+    2.000000
+    18.000000
+    10.000000
+    range
+    i
+    None
+  guard_vector
+  line_number_map 1 1 1 1 1 1 1 1 1 1 2 2 1 1 1 1 1 1 1

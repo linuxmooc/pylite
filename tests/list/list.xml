@@ -1,0 +1,67 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 0
+  label_count 3
+  insn_vector
+    new_list 3
+    load_const c0
+    load_const c1
+    dup_top 2
+    store_item
+    load_const c2
+    load_const c3
+    dup_top 2
+    store_item
+    load_const c4
+    load_const c5
+    dup_top 2
+    store_item
+    store_global c6
+    load_const c7
+    load_global c6
+    load_field c8
+    call 1
+    pop
+    load_const c9
+    load_const c1
+    load_global c6
+    load_field c10
+    call 2
+    pop
+    load_const c1
+    store_global c11
+    jmp L1
+    label L0
+    load_global c11
+    load_global c6
+    load_item
+    print
+    load_const c3
+    load_global c11
+    add
+    store_global c11
+    label L1
+    load_const c12
+    load_global c11
+    jlt L0
+    label L2
+    load_const c13
+    return
+  const_vector
+    11.000000
+    0.000000
+    22.000000
+    1.000000
+    33.000000
+    2.000000
+    list
+    44.000000
+    append
+    "HEAD"
+    insert
+    i
+    4.000000
+    None
+  guard_vector
+  line_number_map 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 3 3 3 3 3 3 5 5 6 6 7 7 7 7 8 8 8 8 6 6 6 6 6 1 1

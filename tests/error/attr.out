@@ -1,0 +1,2 @@
+AttributeError:
+  At attr.py, line 6, in __init__()

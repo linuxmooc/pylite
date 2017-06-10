@@ -1,0 +1,168 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 0
+  label_count 0
+  insn_vector
+    load_const c0
+    store_global c1
+    load_const c2
+    store_global c3
+    load_const c4
+    print
+    load_global c3
+    call 0
+    load_global c1
+    call 0
+    add
+    pop
+    load_const c5
+    print
+    load_const c6
+    store_global c7
+    load_const c8
+    print
+    load_global c3
+    call 0
+    load_global c1
+    call 0
+    load_global c7
+    call 2
+    pop
+    load_const c5
+    print
+    load_const c9
+    store_global c10
+    load_const c11
+    store_global c12
+    load_const c13
+    store_global c14
+    load_const c15
+    print
+    load_global c10
+    call 0
+    load_global c14
+    call 0
+    load_item
+    pop
+    load_const c5
+    print
+    load_const c16
+    print
+    load_global c12
+    call 0
+    load_global c10
+    call 0
+    load_global c14
+    call 0
+    store_item
+    load_const c5
+    print
+    load_const c17
+    return
+  const_vector
+    lambda
+      name left
+      param_count 0
+      local_count 0
+      label_count 0
+      insn_vector
+        load_const c0
+        print
+        load_const c1
+        return
+      const_vector
+        "left"
+        0.000000
+      guard_vector
+      line_number_map 2 2 3 3
+    left
+    lambda
+      name right
+      param_count 0
+      local_count 0
+      label_count 0
+      insn_vector
+        load_const c0
+        print
+        load_const c1
+        return
+      const_vector
+        "right"
+        0.000000
+      guard_vector
+      line_number_map 6 6 7 7
+    right
+    "left() + right()"
+    ""
+    lambda
+      name call
+      param_count 2
+      local_count 0
+      label_count 0
+      insn_vector
+        load_const c0
+        return
+      const_vector
+        None
+      guard_vector
+      line_number_map 13 13
+    call
+    "call(left(), right())"
+    lambda
+      name index
+      param_count 0
+      local_count 0
+      label_count 0
+      insn_vector
+        load_const c0
+        print
+        load_const c1
+        return
+      const_vector
+        "index"
+        0.000000
+      guard_vector
+      line_number_map 20 20 21 21
+    index
+    lambda
+      name value
+      param_count 0
+      local_count 0
+      label_count 0
+      insn_vector
+        load_const c0
+        print
+        load_const c1
+        return
+      const_vector
+        "value"
+        0.000000
+      guard_vector
+      line_number_map 24 24 25 25
+    value
+    lambda
+      name array
+      param_count 0
+      local_count 0
+      label_count 0
+      insn_vector
+        load_const c0
+        print
+        new_list 1
+        load_const c1
+        load_const c1
+        dup_top 2
+        store_item
+        return
+      const_vector
+        "array"
+        0.000000
+      guard_vector
+      line_number_map 28 28 29 29 29 29 29 29
+    array
+    "array()[index()]"
+    "array()[index()] = value()"
+    None
+  guard_vector
+  line_number_map 1 1 5 5 9 9 10 10 10 10 10 10 0 0 13 13 15 15 16 16 16 16 16 16 16 0 0 19 19 23 23 27 27 31 31 32 32 32 32 32 32 0 0 35 35 36 36 36 36 36 36 36 0 0 1 1

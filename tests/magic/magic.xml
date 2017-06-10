@@ -1,0 +1,327 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 0
+  label_count 12
+  insn_vector
+    new_class c0
+    store_global c0
+    load_const c1
+    load_global c0
+    store_field c2
+    load_const c3
+    load_global c0
+    store_field c4
+    load_const c5
+    load_global c0
+    store_field c6
+    load_const c7
+    load_global c0
+    store_field c8
+    load_const c9
+    load_global c0
+    store_field c10
+    load_const c11
+    load_global c0
+    store_field c12
+    load_const c13
+    load_global c0
+    store_field c14
+    load_const c15
+    load_global c0
+    store_field c16
+    load_const c17
+    load_global c0
+    store_field c18
+    load_const c19
+    load_global c0
+    store_field c20
+    load_const c21
+    load_global c0
+    store_field c22
+    load_const c23
+    load_global c0
+    store_field c24
+    load_global c0
+    call 0
+    store_global c25
+    load_global c0
+    call 0
+    store_global c26
+    load_global c26
+    load_global c25
+    add
+    pop
+    load_global c26
+    load_global c25
+    sub
+    pop
+    load_global c26
+    load_global c25
+    mul
+    pop
+    load_global c26
+    load_global c25
+    div
+    pop
+    load_global c26
+    load_global c25
+    mod
+    pop
+    load_global c26
+    load_global c25
+    jlt L0
+    load_const c27
+    jmp L1
+    label L0
+    load_const c28
+    label L1
+    pop
+    load_global c26
+    load_global c25
+    jle L2
+    load_const c27
+    jmp L3
+    label L2
+    load_const c28
+    label L3
+    pop
+    load_global c26
+    load_global c25
+    jeq L4
+    load_const c27
+    jmp L5
+    label L4
+    load_const c28
+    label L5
+    pop
+    load_global c26
+    load_global c25
+    jne L6
+    load_const c27
+    jmp L7
+    label L6
+    load_const c28
+    label L7
+    pop
+    load_global c26
+    load_global c25
+    jge L8
+    load_const c27
+    jmp L9
+    label L8
+    load_const c28
+    label L9
+    pop
+    load_global c26
+    load_global c25
+    jgt L10
+    load_const c27
+    jmp L11
+    label L10
+    load_const c28
+    label L11
+    pop
+    load_const c29
+    return
+  const_vector
+    N
+    lambda
+      name __add__
+      param_count 2
+      local_count 0
+      label_count 0
+      insn_vector
+        load_const c0
+        print
+        load_const c1
+        return
+      const_vector
+        "__add__"
+        None
+      guard_vector
+      line_number_map 3 3 2 2
+    __add__
+    lambda
+      name __sub__
+      param_count 2
+      local_count 0
+      label_count 0
+      insn_vector
+        load_const c0
+        print
+        load_const c1
+        return
+      const_vector
+        "__sub__"
+        None
+      guard_vector
+      line_number_map 6 6 5 5
+    __sub__
+    lambda
+      name __mul__
+      param_count 2
+      local_count 0
+      label_count 0
+      insn_vector
+        load_const c0
+        print
+        load_const c1
+        return
+      const_vector
+        "__mul__"
+        None
+      guard_vector
+      line_number_map 9 9 8 8
+    __mul__
+    lambda
+      name __div__
+      param_count 2
+      local_count 0
+      label_count 0
+      insn_vector
+        load_const c0
+        print
+        load_const c1
+        return
+      const_vector
+        "__div__"
+        None
+      guard_vector
+      line_number_map 12 12 11 11
+    __div__
+    lambda
+      name __mod__
+      param_count 2
+      local_count 0
+      label_count 0
+      insn_vector
+        load_const c0
+        print
+        load_const c1
+        return
+      const_vector
+        "__mod__"
+        None
+      guard_vector
+      line_number_map 15 15 14 14
+    __mod__
+    lambda
+      name __lt__
+      param_count 2
+      local_count 0
+      label_count 0
+      insn_vector
+        load_const c0
+        print
+        load_const c1
+        return
+      const_vector
+        "__lt__"
+        None
+      guard_vector
+      line_number_map 18 18 17 17
+    __lt__
+    lambda
+      name __le__
+      param_count 2
+      local_count 0
+      label_count 0
+      insn_vector
+        load_const c0
+        print
+        load_const c1
+        return
+      const_vector
+        "__le__"
+        None
+      guard_vector
+      line_number_map 21 21 20 20
+    __le__
+    lambda
+      name __eq__
+      param_count 2
+      local_count 0
+      label_count 0
+      insn_vector
+        load_const c0
+        print
+        load_const c1
+        return
+      const_vector
+        "__eq__"
+        None
+      guard_vector
+      line_number_map 24 24 23 23
+    __eq__
+    lambda
+      name __ne__
+      param_count 2
+      local_count 0
+      label_count 0
+      insn_vector
+        load_const c0
+        print
+        load_const c1
+        return
+      const_vector
+        "__ne__"
+        None
+      guard_vector
+      line_number_map 27 27 26 26
+    __ne__
+    lambda
+      name __gt__
+      param_count 2
+      local_count 0
+      label_count 0
+      insn_vector
+        load_const c0
+        print
+        load_const c1
+        return
+      const_vector
+        "__gt__"
+        None
+      guard_vector
+      line_number_map 30 30 29 29
+    __gt__
+    lambda
+      name __ge__
+      param_count 2
+      local_count 0
+      label_count 0
+      insn_vector
+        load_const c0
+        print
+        load_const c1
+        return
+      const_vector
+        "__ge__"
+        None
+      guard_vector
+      line_number_map 33 33 32 32
+    __ge__
+    lambda
+      name __len__
+      param_count 1
+      local_count 0
+      label_count 0
+      insn_vector
+        load_const c0
+        print
+        load_const c1
+        return
+      const_vector
+        "__len__"
+        0.000000
+      guard_vector
+      line_number_map 36 36 37 37
+    __len__
+    n1
+    n2
+    False
+    True
+    None
+  guard_vector
+  line_number_map 1 1 2 2 2 5 5 5 8 8 8 11 11 11 14 14 14 17 17 17 20 20 20 23 23 23 26 26 26 29 29 29 32 32 32 35 35 35 39 39 39 40 40 40 42 42 42 42 43 43 43 43 44 44 44 44 45 45 45 45 46 46 46 46 48 48 48 48 48 48 48 48 48 49 49 49 49 49 49 49 49 49 50 50 50 50 50 50 50 50 50 51 51 51 51 51 51 51 51 51 52 52 52 52 52 52 52 52 52 53 53 53 53 53 53 53 53 53 1 1

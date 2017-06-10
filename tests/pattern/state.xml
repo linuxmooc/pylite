@@ -1,0 +1,356 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 1
+  label_count 3
+  insn_vector
+    new_class c0
+    store_global c0
+    load_const c1
+    load_global c0
+    store_field c2
+    new_class c3
+    store_global c3
+    load_global c0
+    load_global c3
+    inherit
+    load_const c4
+    load_global c3
+    store_field c5
+    load_const c6
+    load_global c3
+    store_field c7
+    new_class c8
+    store_global c8
+    load_global c0
+    load_global c8
+    inherit
+    load_const c9
+    load_global c8
+    store_field c5
+    load_const c10
+    load_global c8
+    store_field c7
+    new_class c11
+    store_global c11
+    load_const c12
+    load_global c11
+    store_field c5
+    load_const c13
+    load_global c11
+    store_field c7
+    load_const c14
+    load_global c11
+    store_field c2
+    load_global c11
+    call 0
+    store_global c15
+    new_list 3
+    load_global c15
+    load_field c2
+    load_const c16
+    dup_top 2
+    store_item
+    load_global c15
+    load_field c7
+    load_const c17
+    dup_top 2
+    store_item
+    load_global c15
+    load_field c2
+    load_const c18
+    dup_top 2
+    store_item
+    store_global c19
+    load_global c19
+    iterator
+    store_local -1
+    jmp L1
+    label L0
+    store_global c20
+    load_global c20
+    call 0
+    pop
+    label L1
+    load_local -1
+    next L0
+    pop
+    label L2
+    load_const c21
+    return
+  const_vector
+    State
+    lambda
+      name scan
+      param_count 1
+      local_count 0
+      label_count 2
+      insn_vector
+        load_const c0
+        load_local 0
+        load_field c1
+        add
+        load_local 0
+        store_field c1
+        load_local 0
+        load_field c2
+        load_global c3
+        call 1
+        load_local 0
+        load_field c1
+        jne L1
+        load_const c4
+        load_local 0
+        store_field c1
+        jmp L0
+        label L1
+        label L0
+        load_local 0
+        load_field c5
+        load_local 0
+        load_field c1
+        load_local 0
+        load_field c2
+        load_item
+        load_const c6
+        new_tuple 3
+        print
+        load_const c7
+        return
+      const_vector
+        1.000000
+        pos
+        stations
+        len
+        0.000000
+        name
+        "Scanning... Station is"
+        None
+      guard_vector
+      line_number_map 3 3 3 3 3 3 4 4 4 4 4 4 4 5 5 5 4 4 4 6 6 6 6 6 6 6 6 6 6 2 2
+    scan
+    AmState
+    lambda
+      name __init__
+      param_count 2
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 1
+        load_local 0
+        store_field c0
+        new_list 3
+        load_const c1
+        load_const c2
+        dup_top 2
+        store_item
+        load_const c3
+        load_const c4
+        dup_top 2
+        store_item
+        load_const c5
+        load_const c6
+        dup_top 2
+        store_item
+        load_local 0
+        store_field c7
+        load_const c2
+        load_local 0
+        store_field c8
+        load_const c9
+        load_local 0
+        store_field c10
+        load_const c11
+        return
+      const_vector
+        radio
+        "1250"
+        0.000000
+        "1380"
+        1.000000
+        "1510"
+        2.000000
+        stations
+        pos
+        "AM"
+        name
+        None
+      guard_vector
+      line_number_map 10 10 10 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 12 12 12 13 13 13 9 9
+    __init__
+    lambda
+      name toggle_amfm
+      param_count 1
+      local_count 0
+      label_count 0
+      insn_vector
+        load_const c0
+        print
+        load_local 0
+        load_field c1
+        load_field c2
+        load_local 0
+        load_field c1
+        store_field c3
+        load_const c4
+        return
+      const_vector
+        "Switching to FM"
+        radio
+        fmstate
+        state
+        None
+      guard_vector
+      line_number_map 16 16 17 17 17 17 17 17 15 15
+    toggle_amfm
+    FmState
+    lambda
+      name __init__
+      param_count 2
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 1
+        load_local 0
+        store_field c0
+        new_list 3
+        load_const c1
+        load_const c2
+        dup_top 2
+        store_item
+        load_const c3
+        load_const c4
+        dup_top 2
+        store_item
+        load_const c5
+        load_const c6
+        dup_top 2
+        store_item
+        load_local 0
+        store_field c7
+        load_const c2
+        load_local 0
+        store_field c8
+        load_const c9
+        load_local 0
+        store_field c10
+        load_const c11
+        return
+      const_vector
+        radio
+        "81.3"
+        0.000000
+        "89.1"
+        1.000000
+        "103.9"
+        2.000000
+        stations
+        pos
+        "FM"
+        name
+        None
+      guard_vector
+      line_number_map 22 22 22 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 24 24 24 25 25 25 21 21
+    lambda
+      name toggle_amfm
+      param_count 1
+      local_count 0
+      label_count 0
+      insn_vector
+        load_const c0
+        print
+        load_local 0
+        load_field c1
+        load_field c2
+        load_local 0
+        load_field c1
+        store_field c3
+        load_const c4
+        return
+      const_vector
+        "Switching to AM"
+        radio
+        amstate
+        state
+        None
+      guard_vector
+      line_number_map 28 28 29 29 29 29 29 29 27 27
+    Radio
+    lambda
+      name __init__
+      param_count 1
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 0
+        load_global c0
+        call 1
+        load_local 0
+        store_field c1
+        load_local 0
+        load_global c2
+        call 1
+        load_local 0
+        store_field c3
+        load_local 0
+        load_field c1
+        load_local 0
+        store_field c4
+        load_const c5
+        return
+      const_vector
+        AmState
+        amstate
+        FmState
+        fmstate
+        state
+        None
+      guard_vector
+      line_number_map 33 33 33 33 33 34 34 34 34 34 35 35 35 35 32 32
+    lambda
+      name toggle_amfm
+      param_count 1
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 0
+        load_field c0
+        load_field c1
+        call 0
+        pop
+        load_const c2
+        return
+      const_vector
+        state
+        toggle_amfm
+        None
+      guard_vector
+      line_number_map 38 38 38 38 38 37 37
+    lambda
+      name scan
+      param_count 1
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 0
+        load_field c0
+        load_field c1
+        call 0
+        pop
+        load_const c2
+        return
+      const_vector
+        state
+        scan
+        None
+      guard_vector
+      line_number_map 41 41 41 41 41 40 40
+    radio
+    0.000000
+    1.000000
+    2.000000
+    actions
+    action
+    None
+  guard_vector
+  line_number_map 1 1 2 2 2 8 8 8 8 8 9 9 9 15 15 15 20 20 20 20 20 21 21 21 27 27 27 31 31 32 32 32 37 37 37 40 40 40 44 44 44 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 47 47 47 47 47 47 48 48 48 47 47 47 47 47 1 1

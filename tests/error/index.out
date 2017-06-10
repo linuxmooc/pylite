@@ -1,0 +1,3 @@
+Start
+IndexError:
+  At index.py, line 3, in __init__()

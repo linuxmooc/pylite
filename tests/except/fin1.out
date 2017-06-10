@@ -1,0 +1,6 @@
+global start
+main start
+finally
+ZeroDivisionError:
+  At fin1.py, line 4, in main()
+  At fin1.py, line 10, in __init__()

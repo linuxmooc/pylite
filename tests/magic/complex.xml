@@ -1,0 +1,145 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 0
+  label_count 0
+  insn_vector
+    new_class c0
+    store_global c0
+    load_const c1
+    load_global c0
+    store_field c2
+    load_const c3
+    load_global c0
+    store_field c4
+    load_const c5
+    load_global c0
+    store_field c6
+    load_const c7
+    load_const c8
+    load_global c0
+    call 2
+    store_global c9
+    load_const c10
+    load_const c11
+    load_global c0
+    call 2
+    store_global c12
+    load_global c12
+    load_global c9
+    add
+    store_global c13
+    load_global c13
+    load_field c14
+    print
+    load_global c13
+    load_field c15
+    print
+    load_global c12
+    load_global c13
+    sub
+    store_global c16
+    load_global c16
+    load_field c14
+    print
+    load_global c16
+    load_field c15
+    print
+    load_const c17
+    return
+  const_vector
+    Complex
+    lambda
+      name __init__
+      param_count 3
+      local_count 0
+      label_count 0
+      insn_vector
+        load_local 1
+        load_local 0
+        store_field c0
+        load_local 2
+        load_local 0
+        store_field c1
+        load_const c2
+        return
+      const_vector
+        real
+        imag
+        None
+      guard_vector
+      line_number_map 3 3 3 4 4 4 2 2
+    __init__
+    lambda
+      name __add__
+      param_count 2
+      local_count 2
+      label_count 0
+      insn_vector
+        load_local 1
+        load_field c0
+        load_local 0
+        load_field c0
+        add
+        store_local -1
+        load_local 1
+        load_field c1
+        load_local 0
+        load_field c1
+        add
+        store_local -2
+        load_local -2
+        load_local -1
+        load_global c2
+        call 2
+        return
+      const_vector
+        real
+        imag
+        Complex
+      guard_vector
+      line_number_map 7 7 7 7 7 7 8 8 8 8 8 8 9 9 9 9 9
+    __add__
+    lambda
+      name __sub__
+      param_count 2
+      local_count 2
+      label_count 0
+      insn_vector
+        load_local 1
+        load_field c0
+        load_local 0
+        load_field c0
+        sub
+        store_local -1
+        load_local 1
+        load_field c1
+        load_local 0
+        load_field c1
+        sub
+        store_local -2
+        load_local -2
+        load_local -1
+        load_global c2
+        call 2
+        return
+      const_vector
+        real
+        imag
+        Complex
+      guard_vector
+      line_number_map 12 12 12 12 12 12 13 13 13 13 13 13 14 14 14 14 14
+    __sub__
+    10.000000
+    1.000000
+    c1
+    20.000000
+    2.000000
+    c2
+    c3
+    real
+    imag
+    c4
+    None
+  guard_vector
+  line_number_map 1 1 2 2 2 6 6 6 11 11 11 16 16 16 16 16 17 17 17 17 17 19 19 19 19 20 20 20 21 21 21 23 23 23 23 24 24 24 25 25 25 1 1

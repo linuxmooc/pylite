@@ -1,0 +1,42 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 0
+  label_count 0
+  insn_vector
+    new_class c0
+    store_global c0
+    load_const c1
+    store_global c2
+    load_const c3
+    print
+    load_global c2
+    call 0
+    pop
+    load_const c4
+    print
+    load_const c5
+    return
+  const_vector
+    X
+    lambda
+      name main
+      param_count 0
+      local_count 0
+      label_count 0
+      insn_vector
+        load_global c0
+        raise
+        load_const c1
+        return
+      const_vector
+        X
+        None
+      guard_vector
+      line_number_map 5 5 4 4
+    main
+    "Start"
+    "End"
+    None
+  guard_vector
+  line_number_map 1 1 4 4 7 7 8 8 8 9 9 1 1

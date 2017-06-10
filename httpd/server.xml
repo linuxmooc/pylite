@@ -1,0 +1,186 @@
+lambda
+  name __init__
+  param_count 0
+  local_count 0
+  label_count 0
+  insn_vector
+    load_module c0
+    load_this_module
+    store_field c0
+    load_module c1
+    load_this_module
+    store_field c1
+    load_module c2
+    load_this_module
+    store_field c2
+    load_module c3
+    load_this_module
+    store_field c3
+    load_module c4
+    load_this_module
+    store_field c4
+    load_const c5
+    store_global c6
+    load_const c7
+    store_global c8
+    load_const c9
+    load_const c10
+    load_global c8
+    call 2
+    pop
+    load_const c11
+    return
+  const_vector
+    socket
+    os
+    sys
+    http
+    config
+    lambda
+      name handle
+      param_count 1
+      local_count 1
+      label_count 4
+      insn_vector
+        load_global c0
+        load_field c1
+        jfalse L1
+        load_local 0
+        load_global c2
+        load_field c3
+        call 1
+        pop
+        jmp L0
+        label L1
+        load_global c4
+        load_field c5
+        call 0
+        store_local -1
+        load_const c6
+        load_local -1
+        jne L3
+        load_local 0
+        load_global c2
+        load_field c3
+        call 1
+        pop
+        load_const c6
+        load_global c7
+        load_field c8
+        call 1
+        pop
+        jmp L2
+        label L3
+        label L2
+        label L0
+        load_const c9
+        return
+      const_vector
+        config
+        serial
+        http
+        handle
+        os
+        fork
+        0.000000
+        sys
+        exit
+        None
+      guard_vector
+      line_number_map 8 8 8 9 9 9 9 9 8 8 11 11 11 11 12 12 12 13 13 13 13 13 14 14 14 14 14 12 12 12 8 7 7
+    handle
+    lambda
+      name main
+      param_count 2
+      local_count 3
+      label_count 3
+      insn_vector
+        load_global c0
+        load_field c1
+        call 0
+        pop
+        load_const c2
+        load_global c3
+        load_field c4
+        load_global c3
+        load_field c5
+        load_global c3
+        load_field c3
+        call 3
+        store_local -1
+        load_const c6
+        load_global c3
+        load_field c7
+        load_global c3
+        load_field c8
+        load_local -1
+        load_field c9
+        call 3
+        pop
+        load_local 1
+        load_local 0
+        new_tuple 2
+        load_local -1
+        load_field c10
+        call 1
+        pop
+        load_const c11
+        load_local -1
+        load_field c12
+        call 1
+        pop
+        jmp L1
+        label L0
+        load_local -1
+        load_field c13
+        call 0
+        load_const c2
+        dup_top 1
+        load_item
+        store_local -2
+        load_const c6
+        dup_top 1
+        load_item
+        store_local -3
+        pop
+        load_local -2
+        load_global c14
+        call 1
+        pop
+        load_local -2
+        load_field c15
+        call 0
+        pop
+        label L1
+        load_const c16
+        jtrue L0
+        label L2
+        load_const c17
+        return
+      const_vector
+        config
+        parse
+        0.000000
+        socket
+        SOCK_STREAM
+        AF_INET
+        1.000000
+        SO_REUSEADDR
+        SOL_SOCKET
+        setsockopt
+        bind
+        64.000000
+        listen
+        accept
+        handle
+        close
+        True
+        None
+      guard_vector
+      line_number_map 17 17 17 17 18 18 18 18 18 18 18 18 18 19 19 19 19 19 19 19 19 19 20 20 20 20 20 20 20 21 21 21 21 21 23 23 24 24 24 24 24 24 24 24 24 24 24 24 25 25 25 25 26 26 26 26 23 23 23 23 16 16
+    main
+    8080.000000
+    "localhost"
+    None
+  guard_vector
+  line_number_map 1 1 1 2 2 2 3 3 3 4 4 4 5 5 5 7 7 16 16 28 28 28 28 28 1 1

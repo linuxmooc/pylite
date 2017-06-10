@@ -1,0 +1,4 @@
+Start
+Exception:
+  At raise0.py, line 2, in main()
+  At raise0.py, line 5, in __init__()
