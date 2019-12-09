@@ -1,12 +1,12 @@
 DEBUG  	 := 1
-CC       := gcc
-LINK     := gcc
+CC       := clang
+LINK     := clang
 DEP      := Makefile.dep
 
 CFLAGS   := -std=gnu99 -c
 WARNING  := -Wall -Wno-parentheses -Wno-pointer-arith -Wno-unused -Wundef 
 STRICT   := -Wfatal-errors -Werror 
-OPTIM    := -O2 -DNDEBUG -fomit-frame-pointer -fno-stack-protector -ffast-math
+OPTIM    := -O -DNDEBUG -fomit-frame-pointer -fno-stack-protector -ffast-math
 
 ifeq ($(DEBUG), 1)
 CFLAGS += $(WARNING) -g
@@ -34,7 +34,7 @@ dep:
 	@rm -f $(DEP)
 	@for SRC in $(SRCS);                       	\
 	do                                         	\
-	    OBJ=`echo $$SRC | sed -e 's/.c$$/.o/'`;   	\
+	    OBJ=`echo $$SRC | sed -e 's/.c$$/.o/'`; \
 	    cpp -MT $$OBJ -MM $$SRC >>$(DEP);      	\
 	done
 
