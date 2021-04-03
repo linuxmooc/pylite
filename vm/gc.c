@@ -93,6 +93,7 @@ void gc_mark_root()
 void gc_mark_c_stack()
 {
     jmp_buf context;
+    setjmp(context);
     c_stack_low = &context;
 
     for (void **slot = c_stack_low; (void *)slot < c_stack_high; slot++) {
