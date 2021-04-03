@@ -30,7 +30,7 @@ py_object_t *py_file_read(int argc, py_object_t *argv[])
     py_file_t *this = $(argv[0]);
     int count = cast_integer(argv[1]);
 
-    char buffer[count];
+    char buffer[count + 1];
     count = fread(buffer, 1, count, this->file);
     buffer[count] = 0;
 
